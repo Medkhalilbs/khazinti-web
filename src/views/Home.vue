@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" :dir="isRTL ? 'rtl' : 'ltr'">
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-bg"></div>
@@ -39,7 +39,7 @@
             <div class="mock-section">
               <div class="section-title">Recent Transactions</div>
               <div class="mock-transactions">
-                <div class="mock-tx">
+                <div class="mock-tx tx-1">
                   <div class="tx-icon income">💰</div>
                   <div class="tx-info">
                     <span class="tx-name">Salary</span>
@@ -47,7 +47,7 @@
                   </div>
                   <span class="tx-amount positive">+2,500.00</span>
                 </div>
-                <div class="mock-tx">
+                <div class="mock-tx tx-2">
                   <div class="tx-icon expense">🛒</div>
                   <div class="tx-info">
                     <span class="tx-name">Groceries</span>
@@ -55,7 +55,7 @@
                   </div>
                   <span class="tx-amount negative">-85.50</span>
                 </div>
-                <div class="mock-tx">
+                <div class="mock-tx tx-3">
                   <div class="tx-icon expense">🚕</div>
                   <div class="tx-info">
                     <span class="tx-name">Transport</span>
@@ -74,7 +74,7 @@
     <!-- Features Section -->
     <section class="features">
       <div class="features-inner">
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="section-eyebrow">Features</span>
           <h2>{{ t('features.title') }}</h2>
           <p>{{ t('features.subtitle') }}</p>
@@ -82,7 +82,7 @@
 
         <div class="bento-grid">
           <!-- Offline — large hero card -->
-          <div class="bento-card bento-hero" @mouseenter="hoveredFeature = 'offline'" @mouseleave="hoveredFeature = null">
+          <div class="bento-card bento-hero reveal-on-scroll delay-1" @mouseenter="hoveredFeature = 'offline'" @mouseleave="hoveredFeature = null">
             <div class="bento-icon-wrap" style="--card-color: #22c55e">
               <span class="bento-icon">📵</span>
             </div>
@@ -93,8 +93,20 @@
             <div class="bento-glow" style="--glow: rgba(34,197,94,0.12)"></div>
           </div>
 
+          <!-- Secure -->
+          <div class="bento-card bento-gold reveal-on-scroll delay-2" @mouseenter="hoveredFeature = 'secure'" @mouseleave="hoveredFeature = null">
+            <div class="bento-icon-wrap" style="--card-color: #C9A962">
+              <span class="bento-icon">🔐</span>
+            </div>
+            <div class="bento-text">
+              <h3>{{ t('features.secure.title') }}</h3>
+              <p>{{ t('features.secure.desc') }}</p>
+            </div>
+            <div class="bento-glow" style="--glow: rgba(201,169,98,0.15)"></div>
+          </div>
+
           <!-- Multi-Account -->
-          <div class="bento-card" @mouseenter="hoveredFeature = 'multi_account'" @mouseleave="hoveredFeature = null">
+          <div class="bento-card reveal-on-scroll delay-3" @mouseenter="hoveredFeature = 'multi_account'" @mouseleave="hoveredFeature = null">
             <div class="bento-icon-wrap" style="--card-color: #60a5fa">
               <span class="bento-icon">🏦</span>
             </div>
@@ -106,7 +118,7 @@
           </div>
 
           <!-- Budgets -->
-          <div class="bento-card" @mouseenter="hoveredFeature = 'budgets'" @mouseleave="hoveredFeature = null">
+          <div class="bento-card reveal-on-scroll delay-4" @mouseenter="hoveredFeature = 'budgets'" @mouseleave="hoveredFeature = null">
             <div class="bento-icon-wrap" style="--card-color: #f59e0b">
               <span class="bento-icon">🎯</span>
             </div>
@@ -118,7 +130,7 @@
           </div>
 
           <!-- Multi-Currency -->
-          <div class="bento-card" @mouseenter="hoveredFeature = 'multi_currency'" @mouseleave="hoveredFeature = null">
+          <div class="bento-card reveal-on-scroll delay-5" @mouseenter="hoveredFeature = 'multi_currency'" @mouseleave="hoveredFeature = null">
             <div class="bento-icon-wrap" style="--card-color: #a78bfa">
               <span class="bento-icon">💱</span>
             </div>
@@ -130,7 +142,7 @@
           </div>
 
           <!-- Stats — large -->
-          <div class="bento-card bento-wide" @mouseenter="hoveredFeature = 'stats'" @mouseleave="hoveredFeature = null">
+          <div class="bento-card bento-wide reveal-on-scroll delay-6" @mouseenter="hoveredFeature = 'stats'" @mouseleave="hoveredFeature = null">
             <div class="bento-icon-wrap" style="--card-color: #f472b6">
               <span class="bento-icon">📈</span>
             </div>
@@ -149,22 +161,10 @@
             </div>
             <div class="bento-glow" style="--glow: rgba(244,114,182,0.12)"></div>
           </div>
-
-          <!-- Secure -->
-          <div class="bento-card bento-gold" @mouseenter="hoveredFeature = 'secure'" @mouseleave="hoveredFeature = null">
-            <div class="bento-icon-wrap" style="--card-color: #C9A962">
-              <span class="bento-icon">🔐</span>
-            </div>
-            <div class="bento-text">
-              <h3>{{ t('features.secure.title') }}</h3>
-              <p>{{ t('features.secure.desc') }}</p>
-            </div>
-            <div class="bento-glow" style="--glow: rgba(201,169,98,0.15)"></div>
-          </div>
         </div>
 
         <!-- Stats bar -->
-        <div class="stats-bar">
+        <div class="stats-bar reveal-on-scroll delay-7">
           <div class="stat-item">
             <span class="stat-number">100%</span>
             <span class="stat-label">Offline</span>
@@ -189,7 +189,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section reveal-on-scroll">
       <div class="cta-glow"></div>
       <div class="cta-content">
         <span class="cta-eyebrow">🚀 Android Exclusive</span>
@@ -202,12 +202,39 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const isRTL = computed(() => locale.value === 'ar')
 
 const hoveredFeature = ref(null)
+
+const observer = ref(null)
+
+onMounted(() => {
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible')
+        // observer.value.unobserve(entry.target) // Optional: Keep it re-triggering or one-time
+      }
+    })
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  })
+
+  document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+    observer.value.observe(el)
+  })
+})
+
+onUnmounted(() => {
+  if (observer.value) {
+    observer.value.disconnect()
+  }
+})
 </script>
 
 <style scoped>
@@ -325,6 +352,11 @@ const hoveredFeature = ref(null)
   position: relative;
   z-index: 1;
   margin-left: 4rem;
+}
+
+[dir='rtl'] .hero-visual {
+  margin-left: 0;
+  margin-right: 4rem;
 }
 
 .phone-mockup {
@@ -504,6 +536,16 @@ const hoveredFeature = ref(null)
   padding: 0.75rem;
   background: var(--tx-bg);
   border-radius: 14px;
+  animation: slideInTx 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.mock-tx.tx-1 { animation-delay: 0.5s; }
+.mock-tx.tx-2 { animation-delay: 1.2s; }
+.mock-tx.tx-3 { animation-delay: 1.9s; }
+
+@keyframes slideInTx {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .tx-icon {
@@ -631,6 +673,8 @@ const hoveredFeature = ref(null)
 }
 
 .bento-gold {
+  grid-column: span 1;
+  grid-row: span 1;
   background: linear-gradient(135deg, var(--bg-card), rgba(201, 169, 98, 0.05));
   border-color: rgba(201, 169, 98, 0.2);
 }
@@ -651,6 +695,11 @@ const hoveredFeature = ref(null)
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.4s;
+}
+
+[dir='rtl'] .bento-glow {
+  right: auto;
+  left: -40px;
 }
 
 .bento-card:hover .bento-glow {
@@ -857,6 +906,27 @@ const hoveredFeature = ref(null)
   font-size: 1.05rem;
 }
 
+/* Scroll Animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggering delays for bento grid */
+.reveal-on-scroll.delay-1 { transition-delay: 0.05s; }
+.reveal-on-scroll.delay-2 { transition-delay: 0.1s; }
+.reveal-on-scroll.delay-3 { transition-delay: 0.15s; }
+.reveal-on-scroll.delay-4 { transition-delay: 0.2s; }
+.reveal-on-scroll.delay-5 { transition-delay: 0.25s; }
+.reveal-on-scroll.delay-6 { transition-delay: 0.3s; }
+.reveal-on-scroll.delay-7 { transition-delay: 0.35s; }
+
 @media (max-width: 900px) {
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -880,6 +950,9 @@ const hoveredFeature = ref(null)
     margin-left: 0;
     margin-top: 3rem;
   }
+  [dir='rtl'] .hero-visual {
+    margin-right: 0;
+  }
   .hero-actions {
     align-items: center;
   }
@@ -891,7 +964,8 @@ const hoveredFeature = ref(null)
     grid-template-columns: 1fr;
   }
   .bento-hero,
-  .bento-wide {
+  .bento-wide,
+  .bento-gold {
     grid-column: span 1;
     grid-row: span 1;
   }
