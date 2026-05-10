@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "privacy": "Privacy Policy",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Your Personal Finance Companion",
+    "subtitle": "Track expenses, manage budgets, and grow your wealth \u2014 all offline, all private.",
+    "cta": "Download Now",
+    "available": "Available on iOS & Android"
+  },
+  "features": {
+    "title": "Everything You Need",
+    "subtitle": "Powerful features designed for your financial journey",
+    "offline": {
+      "title": "100% Offline",
+      "desc": "Your data stays on your device. No servers, no tracking, complete privacy."
+    },
+    "multi_account": {
+      "title": "Multi-Account",
+      "desc": "Manage wallets, bank accounts, and savings in one place."
+    },
+    "budgets": {
+      "title": "Smart Budgets",
+      "desc": "Set budgets by category and track your spending in real-time."
+    },
+    "multi_currency": {
+      "title": "Multi-Currency",
+      "desc": "Support for TND, EUR, USD and 150+ currencies with live rates."
+    },
+    "stats": {
+      "title": "Visual Insights",
+      "desc": "Beautiful charts and analytics to understand your spending patterns."
+    },
+    "secure": {
+      "title": "Bank-Level Security",
+      "desc": "PIN code and biometric authentication protect your financial data."
+    }
+  },
+  "footer": {
+    "tagline": "Your treasure, your rules.",
+    "links": "Links",
+    "legal": "Legal",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: May 2026",
+    "intro": {
+      "title": "Introduction",
+      "content": "Khazinti (\"\u062e\u0632\u064a\u0646\u062a\u064a\") is a personal finance management mobile application. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we handle your data when you use our application."
+    },
+    "data_collection": {
+      "title": "Data We Collect",
+      "content": "Khazinti is designed with a privacy-first, offline-first architecture. Here's what you should know:",
+      "items": [
+        "Financial Data: All your financial data (accounts, transactions, budgets, categories) is stored exclusively on your device using local SQLite database.",
+        "No Server Storage: We do not collect, transmit, or store any of your financial data on external servers.",
+        "No Account Required: You do not need to create an account or provide personal information to use Khazinti.",
+        "Currency Rates: When you use multi-currency features, the app fetches exchange rates from third-party APIs (Frankfurter API). Only the currency pair is sent \u2014 no personal data.",
+        "No Analytics: We do not use any analytics or tracking services within the app."
+      ]
+    },
+    "data_storage": {
+      "title": "Data Storage & Security",
+      "content": "Your data security is our top priority:",
+      "items": [
+        "All data is stored locally on your device in an encrypted SQLite database.",
+        "Access to the app is protected by PIN code and/or biometric authentication (fingerprint, face recognition).",
+        "No data is transmitted to our servers or any third party (except currency rate requests as described above).",
+        "If you uninstall the app, all data is permanently deleted from your device."
+      ]
+    },
+    "third_party": {
+      "title": "Third-Party Services",
+      "content": "Khazinti uses minimal third-party services:",
+      "items": [
+        "Exchange Rate APIs: Frankfurter API and Open Exchange Rates API are used solely to fetch current currency exchange rates. Only currency codes are transmitted \u2014 no personal or financial data.",
+        "App Store / Play Store: Distribution through Apple App Store and Google Play Store is subject to their respective privacy policies.",
+        "No advertising networks, no social media SDKs, and no analytics platforms are integrated into the app."
+      ]
+    },
+    "user_rights": {
+      "title": "Your Rights",
+      "content": "Since all your data is stored locally on your device, you have complete control:",
+      "items": [
+        "Access: You can view all your data directly within the app at any time.",
+        "Deletion: You can delete any or all data from within the app, or by uninstalling the application.",
+        "Export: You can export your data in standard formats for your own records.",
+        "Portability: Your data belongs to you. We never have access to it."
+      ]
+    },
+    "children": {
+      "title": "Children's Privacy",
+      "content": "Khazinti is not directed at children under 13 years of age. We do not knowingly collect personal information from children. Since the app operates entirely offline with no data collection, there is no mechanism through which children's data could be collected."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "content": "We may update this Privacy Policy from time to time. Any changes will be reflected in the \"Last updated\" date at the top of this page. We encourage you to review this policy periodically."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
+      "email": "support.khazinti@gmail.com"
+    }
+  }
+}
