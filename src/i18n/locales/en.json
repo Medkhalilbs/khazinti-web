@@ -8,7 +8,7 @@
     "title": "Your Personal Finance Companion",
     "subtitle": "Track expenses, manage budgets, and grow your wealth \u2014 all offline, all private.",
     "cta": "Download Now",
-    "available": "Available on iOS & Android"
+    "available": "Available exclusively on Android"
   },
   "features": {
     "title": "Everything You Need",
@@ -27,7 +27,7 @@
     },
     "multi_currency": {
       "title": "Multi-Currency",
-      "desc": "Support for TND, EUR, USD and 150+ currencies with live rates."
+      "desc": "Support for TND, EUR, USD and 10+ currencies with live rates."
     },
     "stats": {
       "title": "Visual Insights",

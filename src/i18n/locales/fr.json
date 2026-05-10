@@ -8,7 +8,7 @@
     "title": "Votre Compagnon Financier Personnel",
     "subtitle": "Suivez vos dépenses, gérez vos budgets et faites croître votre patrimoine — tout hors-ligne, tout privé.",
     "cta": "Télécharger",
-    "available": "Disponible sur iOS & Android"
+    "available": "Disponible uniquement sur Android"
   },
   "features": {
     "title": "Tout Ce Dont Vous Avez Besoin",
@@ -27,7 +27,7 @@
     },
     "multi_currency": {
       "title": "Multi-Devises",
-      "desc": "Support pour TND, EUR, USD et plus de 150 devises avec taux en direct."
+      "desc": "Support pour TND, EUR, USD et plus de 10 devises avec taux en direct."
     },
     "stats": {
       "title": "Analyses Visuelles",

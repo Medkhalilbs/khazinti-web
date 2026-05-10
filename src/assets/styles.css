@@ -1,4 +1,41 @@
-/* Global Styles — Khazinti Web */
+:root {
+  --primary: #C9A962;
+  --bg-primary: #0A0E1A;
+  --bg-secondary: #060911;
+  --bg-nav: rgba(10, 14, 26, 0.95);
+  --bg-card: rgba(255, 255, 255, 0.02);
+  --bg-card-hover: rgba(255, 255, 255, 0.05);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --border-color: rgba(201, 169, 98, 0.1);
+  --border-strong: rgba(201, 169, 98, 0.3);
+  --border-card: rgba(255, 255, 255, 0.06);
+  --phone-bg: #0F1724;
+  --tx-bg: rgba(255, 255, 255, 0.03);
+  --bg-gradient-1: rgba(30, 58, 95, 0.4);
+  --bg-gradient-2: rgba(201, 169, 98, 0.08);
+}
+
+:root[data-theme="light"] {
+  --primary: #C9A962;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-nav: rgba(255, 255, 255, 0.95);
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --text-primary: #0A0E1A;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border-color: rgba(201, 169, 98, 0.2);
+  --border-strong: rgba(201, 169, 98, 0.5);
+  --border-card: #e2e8f0;
+  --phone-bg: #f8fafc;
+  --tx-bg: #f1f5f9;
+  --bg-gradient-1: rgba(201, 169, 98, 0.15);
+  --bg-gradient-2: rgba(30, 58, 95, 0.05);
+}
+
 *,
 *::before,
 *::after {
@@ -12,12 +49,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #0A0E1A;
-  color: #ffffff;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -35,16 +73,16 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0E1A;
+  background: var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(201, 169, 98, 0.3);
+  background: var(--border-strong);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(201, 169, 98, 0.5);
+  background: var(--primary);
 }
 
 /* RTL Support */
@@ -65,6 +103,6 @@ img {
 
 /* Selection */
 ::selection {
-  background: rgba(201, 169, 98, 0.3);
-  color: #ffffff;
+  background: var(--border-strong);
+  color: var(--text-primary);
 }

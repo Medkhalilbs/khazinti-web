@@ -17,29 +17,56 @@
       </div>
       <div class="hero-visual">
         <div class="phone-mockup">
+          <div class="notch"></div>
           <div class="phone-screen">
             <div class="mock-header">
-              <span class="mock-balance">1,250.50 TND</span>
-              <span class="mock-label">Total Balance</span>
+              <div class="greeting">
+                <span class="greet-text">Good morning</span>
+              </div>
+              <div class="mock-avatar">K</div>
             </div>
-            <div class="mock-transactions">
-              <div class="mock-tx">
-                <span class="tx-icon income">↑</span>
-                <span class="tx-name">Salary</span>
-                <span class="tx-amount positive">+2,500.00</span>
+            
+            <div class="mock-card">
+              <span class="mock-label">Total Balance</span>
+              <span class="mock-balance">1,250.50 <span class="currency">TND</span></span>
+              
+              <div class="mock-card-actions">
+                <div class="action-btn"><span class="icon income">↓</span>Income</div>
+                <div class="action-btn"><span class="icon expense">↑</span>Expense</div>
               </div>
-              <div class="mock-tx">
-                <span class="tx-icon expense">↓</span>
-                <span class="tx-name">Groceries</span>
-                <span class="tx-amount negative">-85.50</span>
-              </div>
-              <div class="mock-tx">
-                <span class="tx-icon expense">↓</span>
-                <span class="tx-name">Transport</span>
-                <span class="tx-amount negative">-12.00</span>
+            </div>
+
+            <div class="mock-section">
+              <div class="section-title">Recent Transactions</div>
+              <div class="mock-transactions">
+                <div class="mock-tx">
+                  <div class="tx-icon income">💰</div>
+                  <div class="tx-info">
+                    <span class="tx-name">Salary</span>
+                    <span class="tx-date">Today, 09:00</span>
+                  </div>
+                  <span class="tx-amount positive">+2,500.00</span>
+                </div>
+                <div class="mock-tx">
+                  <div class="tx-icon expense">🛒</div>
+                  <div class="tx-info">
+                    <span class="tx-name">Groceries</span>
+                    <span class="tx-date">Yesterday, 18:30</span>
+                  </div>
+                  <span class="tx-amount negative">-85.50</span>
+                </div>
+                <div class="mock-tx">
+                  <div class="tx-icon expense">🚕</div>
+                  <div class="tx-info">
+                    <span class="tx-name">Transport</span>
+                    <span class="tx-date">12 May, 08:15</span>
+                  </div>
+                  <span class="tx-amount negative">-12.00</span>
+                </div>
               </div>
             </div>
           </div>
+          <div class="home-indicator"></div>
         </div>
       </div>
     </section>
@@ -104,8 +131,8 @@ const features = [
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 30% 50%, rgba(30, 58, 95, 0.4) 0%, transparent 60%),
-              radial-gradient(ellipse at 70% 80%, rgba(201, 169, 98, 0.08) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 30% 50%, var(--bg-gradient-1) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, var(--bg-gradient-2) 0%, transparent 50%);
 }
 
 .hero-content {
@@ -119,8 +146,8 @@ const features = [
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(201, 169, 98, 0.1);
-  border: 1px solid rgba(201, 169, 98, 0.2);
+  background: var(--border-color);
+  border: 1px solid var(--border-strong);
   border-radius: 100px;
   margin-bottom: 2rem;
 }
@@ -150,7 +177,7 @@ const features = [
   font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   line-height: 1.15;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0 0 1.5rem;
 }
 
@@ -158,7 +185,7 @@ const features = [
   font-family: 'Inter', sans-serif;
   font-size: 1.15rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
   margin: 0 0 2.5rem;
 }
 
@@ -192,7 +219,7 @@ const features = [
 .available-text {
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -205,39 +232,165 @@ const features = [
 .phone-mockup {
   width: 280px;
   height: 560px;
-  background: #0F1724;
-  border-radius: 36px;
-  border: 3px solid rgba(201, 169, 98, 0.3);
-  padding: 2rem 1.25rem;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+  background: var(--phone-bg);
+  border-radius: 40px;
+  border: 4px solid var(--border-strong);
+  padding: 0;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+  animation: floatMockup 6s ease-in-out infinite;
+}
+
+@keyframes floatMockup {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 24px;
+  background: var(--border-strong);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  z-index: 10;
+}
+
+.home-indicator {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--text-muted);
+  border-radius: 4px;
 }
 
 .phone-screen {
   height: 100%;
+  padding: 2.5rem 1.25rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
+.phone-screen::-webkit-scrollbar { display: none; }
 
 .mock-header {
-  text-align: center;
-  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.mock-balance {
-  display: block;
+.greeting {
+  display: flex;
+  flex-direction: column;
+}
+
+.greet-text {
   font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.greet-name {
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 1.75rem;
-  color: #ffffff;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.mock-avatar {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--primary), #B8944E);
+  color: #0A0E1A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.mock-card {
+  background: linear-gradient(135deg, var(--primary), #B8944E);
+  border-radius: 20px;
+  padding: 1.25rem;
+  color: #0A0E1A;
+  box-shadow: 0 10px 20px rgba(201, 169, 98, 0.2);
 }
 
 .mock-label {
   display: block;
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: rgba(10, 14, 26, 0.7);
+  margin-bottom: 0.25rem;
+}
+
+.mock-balance {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #0A0E1A;
+}
+
+.currency {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.mock-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.action-btn {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.action-btn .icon {
+  width: 20px;
+  height: 20px;
+  background: rgba(10, 14, 26, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.mock-section {
+  flex: 1;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
 }
 
 .mock-transactions {
@@ -251,34 +404,47 @@ const features = [
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 12px;
+  background: var(--tx-bg);
+  border-radius: 14px;
 }
 
 .tx-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .tx-icon.income { background: rgba(34, 197, 94, 0.15); }
 .tx-icon.expense { background: rgba(239, 68, 68, 0.15); }
 
-.tx-name {
+.tx-info {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.tx-name {
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.tx-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-muted);
 }
 
 .tx-amount {
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 
 .tx-amount.positive { color: #22c55e; }
@@ -300,14 +466,14 @@ const features = [
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0 0 1rem;
 }
 
 .section-header p {
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -318,15 +484,16 @@ const features = [
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
   border-radius: 16px;
   padding: 2rem;
-  transition: border-color 0.3s, transform 0.2s;
+  transition: border-color 0.3s, transform 0.2s, background-color 0.3s;
 }
 
 .feature-card:hover {
-  border-color: rgba(201, 169, 98, 0.3);
+  border-color: var(--border-strong);
+  background: var(--bg-card-hover);
   transform: translateY(-4px);
 }
 
@@ -339,7 +506,7 @@ const features = [
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.15rem;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0 0 0.75rem;
 }
 
@@ -347,7 +514,7 @@ const features = [
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -355,21 +522,21 @@ const features = [
 .cta-section {
   padding: 6rem 2rem;
   text-align: center;
-  background: linear-gradient(180deg, transparent 0%, rgba(30, 58, 95, 0.2) 100%);
+  background: linear-gradient(180deg, transparent 0%, var(--bg-gradient-1) 100%);
 }
 
 .cta-content h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0 0 1rem;
 }
 
 .cta-content p {
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   margin: 0 0 2rem;
 }
 

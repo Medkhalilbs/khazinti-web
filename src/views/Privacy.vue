@@ -97,22 +97,22 @@ const { t, tm, rt } = useI18n()
 .privacy-header {
   text-align: center;
   padding: 4rem 2rem 3rem;
-  background: linear-gradient(180deg, rgba(30, 58, 95, 0.3) 0%, transparent 100%);
-  border-bottom: 1px solid rgba(201, 169, 98, 0.1);
+  background: linear-gradient(180deg, var(--bg-gradient-1) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .privacy-header h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0 0 0.75rem;
 }
 
 .last-updated {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-muted);
   margin: 0 0 1.5rem;
 }
 
@@ -129,7 +129,7 @@ const { t, tm, rt } = useI18n()
 .policy-section {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border-card);
 }
 
 .policy-section:last-child {
@@ -148,7 +148,7 @@ const { t, tm, rt } = useI18n()
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   margin: 0 0 1rem;
 }
 
@@ -162,10 +162,10 @@ const { t, tm, rt } = useI18n()
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--text-secondary);
   padding: 0.75rem 0 0.75rem 1.5rem;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-card);
 }
 
 .policy-section li::before {
@@ -184,11 +184,11 @@ const { t, tm, rt } = useI18n()
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #C9A962;
+  color: var(--primary);
   text-decoration: none;
   padding: 0.75rem 1.5rem;
-  background: rgba(201, 169, 98, 0.1);
-  border: 1px solid rgba(201, 169, 98, 0.3);
+  background: var(--border-color);
+  border: 1px solid var(--border-strong);
   border-radius: 12px;
   margin-top: 0.5rem;
   transition: background 0.2s, transform 0.2s;

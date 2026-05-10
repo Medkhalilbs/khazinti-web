@@ -34,7 +34,7 @@ function switchLang(code) {
 .lang-switcher {
   display: flex;
   gap: 0.25rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--theme-toggle-bg, rgba(255, 255, 255, 0.05));
   border-radius: 8px;
   padding: 0.25rem;
 }
@@ -48,13 +48,13 @@ function switchLang(code) {
   border-radius: 6px;
   cursor: pointer;
   background: transparent;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   transition: all 0.2s ease;
 }
 
 .lang-btn:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--theme-toggle-color, #ffffff);
+  background: var(--border-color);
 }
 
 .lang-btn.active {

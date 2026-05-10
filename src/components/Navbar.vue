@@ -2,12 +2,7 @@
   <nav class="navbar">
     <div class="navbar-container">
       <router-link to="/" class="navbar-brand">
-        <div class="logo-mark">
-          <span class="bar bar-k"></span>
-          <span class="bar bar-1"></span>
-          <span class="bar bar-2"></span>
-          <span class="bar bar-3"></span>
-        </div>
+        <img src="../assets/icon_app.png" alt="Khazinti Logo" class="app-logo" />
         <span class="brand-text">Khazinti</span>
       </router-link>
 
@@ -15,6 +10,10 @@
         <router-link to="/" class="nav-link">{{ t('nav.home') }}</router-link>
         <router-link to="/privacy" class="nav-link">{{ t('nav.privacy') }}</router-link>
         <LanguageSwitcher />
+        <button class="theme-toggle" @click="toggleTheme" aria-label="Toggle theme">
+          <span v-if="isDark">☀️</span>
+          <span v-else>🌙</span>
+        </button>
       </div>
 
       <button class="mobile-toggle" @click="mobileOpen = !mobileOpen" aria-label="Toggle menu">
@@ -27,18 +26,36 @@
         <router-link to="/" class="nav-link" @click="mobileOpen = false">{{ t('nav.home') }}</router-link>
         <router-link to="/privacy" class="nav-link" @click="mobileOpen = false">{{ t('nav.privacy') }}</router-link>
         <LanguageSwitcher />
+        <button class="theme-toggle mobile-theme-toggle" @click="toggleTheme">
+          <span v-if="isDark">☀️ Light Mode</span>
+          <span v-else>🌙 Dark Mode</span>
+        </button>
       </div>
     </Transition>
   </nav>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
 const { t } = useI18n()
 const mobileOpen = ref(false)
+const isDark = ref(true)
+
+onMounted(() => {
+  const savedTheme = localStorage.getItem('theme') || 'dark'
+  isDark.value = savedTheme === 'dark'
+  document.documentElement.setAttribute('data-theme', savedTheme)
+})
+
+const toggleTheme = () => {
+  isDark.value = !isDark.value
+  const theme = isDark.value ? 'dark' : 'light'
+  document.documentElement.setAttribute('data-theme', theme)
+  localStorage.setItem('theme', theme)
+}
 </script>
 
 <style scoped>
@@ -48,9 +65,10 @@ const mobileOpen = ref(false)
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(10, 14, 26, 0.95);
+  background: var(--bg-nav);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(201, 169, 98, 0.1);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .navbar-container {
@@ -69,30 +87,17 @@ const mobileOpen = ref(false)
   text-decoration: none;
 }
 
-.logo-mark {
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  height: 28px;
+.app-logo {
+  height: 32px;
+  width: auto;
+  border-radius: 8px;
 }
-
-.bar {
-  display: block;
-  width: 4px;
-  border-radius: 2px;
-  background: #ffffff;
-}
-
-.bar-k { height: 28px; }
-.bar-1 { height: 14px; }
-.bar-2 { height: 20px; }
-.bar-3 { height: 26px; background: #C9A962; }
 
 .brand-text {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .navbar-links {
@@ -105,7 +110,7 @@ const mobileOpen = ref(false)
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -113,6 +118,25 @@ const mobileOpen = ref(false)
 .nav-link:hover,
 .nav-link.router-link-active {
   color: #C9A962;
+}
+
+.theme-toggle {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-strong);
 }
 
 .mobile-toggle {
@@ -127,7 +151,7 @@ const mobileOpen = ref(false)
   display: block;
   width: 24px;
   height: 2px;
-  background: #fff;
+  background: var(--text-primary);
   position: relative;
   transition: background 0.2s;
 }
@@ -139,7 +163,7 @@ const mobileOpen = ref(false)
   left: 0;
   width: 24px;
   height: 2px;
-  background: #fff;
+  background: var(--text-primary);
   transition: transform 0.2s;
 }
 
@@ -155,7 +179,16 @@ const mobileOpen = ref(false)
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 2rem 1.5rem;
-  border-top: 1px solid rgba(201, 169, 98, 0.1);
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.mobile-theme-toggle {
+  width: auto;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 
 .slide-enter-active,

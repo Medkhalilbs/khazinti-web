@@ -2,12 +2,7 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <div class="logo-mark">
-          <span class="bar bar-k"></span>
-          <span class="bar bar-1"></span>
-          <span class="bar bar-2"></span>
-          <span class="bar bar-3"></span>
-        </div>
+        <img src="../assets/icon_app.png" alt="Khazinti Logo" class="app-logo" />
         <div>
           <h3 class="brand-name">Khazinti <span class="arabic">خزينتي</span></h3>
           <p class="tagline">{{ t('footer.tagline') }}</p>
@@ -42,9 +37,10 @@ const currentYear = new Date().getFullYear()
 
 <style scoped>
 .footer {
-  background: #060911;
-  border-top: 1px solid rgba(201, 169, 98, 0.1);
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
   padding: 4rem 2rem 0;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .footer-container {
@@ -63,31 +59,18 @@ const currentYear = new Date().getFullYear()
   gap: 1rem;
 }
 
-.logo-mark {
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  height: 24px;
+.app-logo {
+  height: 32px;
+  width: auto;
+  border-radius: 6px;
   margin-top: 4px;
 }
-
-.bar {
-  display: block;
-  width: 3px;
-  border-radius: 2px;
-  background: #ffffff;
-}
-
-.bar-k { height: 24px; }
-.bar-1 { height: 12px; }
-.bar-2 { height: 17px; }
-.bar-3 { height: 22px; background: #C9A962; }
 
 .brand-name {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -99,7 +82,7 @@ const currentYear = new Date().getFullYear()
 .tagline {
   font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   margin: 0.25rem 0 0;
 }
 
@@ -122,7 +105,7 @@ const currentYear = new Date().getFullYear()
   display: block;
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-secondary);
   text-decoration: none;
   margin-bottom: 0.5rem;
   transition: color 0.2s;
@@ -133,7 +116,7 @@ const currentYear = new Date().getFullYear()
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--border-card);
   padding: 1.5rem 0;
   text-align: center;
 }
@@ -141,7 +124,7 @@ const currentYear = new Date().getFullYear()
 .footer-bottom p {
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-muted);
   margin: 0;
 }
 
