@@ -73,24 +73,128 @@
 
     <!-- Features Section -->
     <section class="features">
-      <div class="section-header">
-        <h2>{{ t('features.title') }}</h2>
-        <p>{{ t('features.subtitle') }}</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card" v-for="feature in features" :key="feature.key">
-          <div class="feature-icon">{{ feature.icon }}</div>
-          <h3>{{ t(`features.${feature.key}.title`) }}</h3>
-          <p>{{ t(`features.${feature.key}.desc`) }}</p>
+      <div class="features-inner">
+        <div class="section-header">
+          <span class="section-eyebrow">Features</span>
+          <h2>{{ t('features.title') }}</h2>
+          <p>{{ t('features.subtitle') }}</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Offline — large hero card -->
+          <div class="bento-card bento-hero" @mouseenter="hoveredFeature = 'offline'" @mouseleave="hoveredFeature = null">
+            <div class="bento-icon-wrap" style="--card-color: #22c55e">
+              <span class="bento-icon">📵</span>
+            </div>
+            <div class="bento-text">
+              <h3>{{ t('features.offline.title') }}</h3>
+              <p>{{ t('features.offline.desc') }}</p>
+            </div>
+            <div class="bento-glow" style="--glow: rgba(34,197,94,0.12)"></div>
+          </div>
+
+          <!-- Multi-Account -->
+          <div class="bento-card" @mouseenter="hoveredFeature = 'multi_account'" @mouseleave="hoveredFeature = null">
+            <div class="bento-icon-wrap" style="--card-color: #60a5fa">
+              <span class="bento-icon">🏦</span>
+            </div>
+            <div class="bento-text">
+              <h3>{{ t('features.multi_account.title') }}</h3>
+              <p>{{ t('features.multi_account.desc') }}</p>
+            </div>
+            <div class="bento-glow" style="--glow: rgba(96,165,250,0.12)"></div>
+          </div>
+
+          <!-- Budgets -->
+          <div class="bento-card" @mouseenter="hoveredFeature = 'budgets'" @mouseleave="hoveredFeature = null">
+            <div class="bento-icon-wrap" style="--card-color: #f59e0b">
+              <span class="bento-icon">🎯</span>
+            </div>
+            <div class="bento-text">
+              <h3>{{ t('features.budgets.title') }}</h3>
+              <p>{{ t('features.budgets.desc') }}</p>
+            </div>
+            <div class="bento-glow" style="--glow: rgba(245,158,11,0.12)"></div>
+          </div>
+
+          <!-- Multi-Currency -->
+          <div class="bento-card" @mouseenter="hoveredFeature = 'multi_currency'" @mouseleave="hoveredFeature = null">
+            <div class="bento-icon-wrap" style="--card-color: #a78bfa">
+              <span class="bento-icon">💱</span>
+            </div>
+            <div class="bento-text">
+              <h3>{{ t('features.multi_currency.title') }}</h3>
+              <p>{{ t('features.multi_currency.desc') }}</p>
+            </div>
+            <div class="bento-glow" style="--glow: rgba(167,139,250,0.12)"></div>
+          </div>
+
+          <!-- Stats — large -->
+          <div class="bento-card bento-wide" @mouseenter="hoveredFeature = 'stats'" @mouseleave="hoveredFeature = null">
+            <div class="bento-icon-wrap" style="--card-color: #f472b6">
+              <span class="bento-icon">📈</span>
+            </div>
+            <div class="bento-text">
+              <h3>{{ t('features.stats.title') }}</h3>
+              <p>{{ t('features.stats.desc') }}</p>
+            </div>
+            <!-- Mini donut preview -->
+            <div class="mini-chart">
+              <div class="donut"></div>
+              <div class="chart-legend">
+                <span class="legend-item" style="--dot: #22c55e">Food</span>
+                <span class="legend-item" style="--dot: #f59e0b">Transport</span>
+                <span class="legend-item" style="--dot: #60a5fa">Bills</span>
+              </div>
+            </div>
+            <div class="bento-glow" style="--glow: rgba(244,114,182,0.12)"></div>
+          </div>
+
+          <!-- Secure -->
+          <div class="bento-card bento-gold" @mouseenter="hoveredFeature = 'secure'" @mouseleave="hoveredFeature = null">
+            <div class="bento-icon-wrap" style="--card-color: #C9A962">
+              <span class="bento-icon">🔐</span>
+            </div>
+            <div class="bento-text">
+              <h3>{{ t('features.secure.title') }}</h3>
+              <p>{{ t('features.secure.desc') }}</p>
+            </div>
+            <div class="bento-glow" style="--glow: rgba(201,169,98,0.15)"></div>
+          </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Offline</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Currencies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Data Shared</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Free</span>
+            <span class="stat-label">To Download</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
+      <div class="cta-glow"></div>
       <div class="cta-content">
+        <span class="cta-eyebrow">🚀 Android Exclusive</span>
         <h2>Ready to Take Control?</h2>
-        <p>Start managing your finances today — no sign-up required.</p>
+        <p>Start managing your finances today — no sign-up, no cloud, no tracking.</p>
         <a href="#" class="btn-primary btn-large">{{ t('hero.cta') }}</a>
       </div>
     </section>
@@ -98,18 +202,12 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const features = [
-  { key: 'offline', icon: '📱' },
-  { key: 'multi_account', icon: '🏦' },
-  { key: 'budgets', icon: '📊' },
-  { key: 'multi_currency', icon: '💱' },
-  { key: 'stats', icon: '📈' },
-  { key: 'secure', icon: '🔒' }
-]
+const hoveredFeature = ref(null)
 </script>
 
 <style scoped>
@@ -453,82 +551,292 @@ const features = [
 /* Features */
 .features {
   padding: 6rem 2rem;
+  background: var(--bg-primary);
+}
+
+.features-inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.section-eyebrow {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(201, 169, 98, 0.1);
+  border: 1px solid rgba(201, 169, 98, 0.25);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+}
+
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .section-header h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   color: var(--text-primary);
   margin: 0 0 1rem;
 }
 
 .section-header p {
   font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
-  margin: 0;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
 }
 
-.features-grid {
+/* Bento Grid */
+.bento-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1.25rem;
 }
 
-.feature-card {
+.bento-hero {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.bento-wide {
+  grid-column: span 2;
+}
+
+.bento-card {
+  position: relative;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 2rem;
-  transition: border-color 0.3s, transform 0.2s, background-color 0.3s;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: default;
 }
 
-.feature-card:hover {
+.bento-card:hover {
   border-color: var(--border-strong);
-  background: var(--bg-card-hover);
   transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
 }
 
-.feature-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.bento-gold {
+  background: linear-gradient(135deg, var(--bg-card), rgba(201, 169, 98, 0.05));
+  border-color: rgba(201, 169, 98, 0.2);
 }
 
-.feature-card h3 {
+.bento-gold:hover {
+  border-color: rgba(201, 169, 98, 0.5);
+  box-shadow: 0 16px 40px rgba(201, 169, 98, 0.12);
+}
+
+/* Glow effect */
+.bento-glow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, var(--glow) 0%, transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.bento-card:hover .bento-glow {
+  opacity: 1;
+}
+
+/* Icon wrap */
+.bento-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--card-color) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--card-color) 30%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: transform 0.3s;
+}
+
+.bento-card:hover .bento-icon-wrap {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.bento-text h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--text-primary);
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.6rem;
 }
 
-.feature-card p {
+.bento-text p {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--text-muted);
   margin: 0;
+}
+
+/* Mini chart in stats card */
+.mini-chart {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.donut {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #22c55e 0deg 130deg,
+    #f59e0b 130deg 220deg,
+    #60a5fa 220deg 360deg
+  );
+  flex-shrink: 0;
+  position: relative;
+}
+
+.donut::after {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border-radius: 50%;
+  background: var(--bg-card);
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.legend-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dot);
+  flex-shrink: 0;
+}
+
+/* Stats bar */
+.stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 3rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 1.75rem 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.stat-number {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  background: linear-gradient(135deg, var(--primary), #B8944E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border-color);
+  flex-shrink: 0;
+  margin: 0 1rem;
 }
 
 /* CTA */
 .cta-section {
-  padding: 6rem 2rem;
+  padding: 7rem 2rem;
   text-align: center;
-  background: linear-gradient(180deg, transparent 0%, var(--bg-gradient-1) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(201, 169, 98, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-eyebrow {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(201, 169, 98, 0.1);
+  border: 1px solid rgba(201, 169, 98, 0.25);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
 }
 
 .cta-content h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   color: var(--text-primary);
   margin: 0 0 1rem;
 }
@@ -537,12 +845,29 @@ const features = [
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   color: var(--text-muted);
-  margin: 0 0 2rem;
+  margin: 0 0 2.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
 }
 
 .btn-large {
   padding: 1.1rem 3rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bento-hero {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .bento-wide {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 768px) {
@@ -562,8 +887,19 @@ const features = [
     width: 240px;
     height: 480px;
   }
-  .features-grid {
+  .bento-grid {
     grid-template-columns: 1fr;
+  }
+  .bento-hero,
+  .bento-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .stats-bar {
+    gap: 1rem;
+  }
+  .stat-divider {
+    display: none;
   }
 }
 </style>

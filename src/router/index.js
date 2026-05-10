@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Privacy from '../views/Privacy.vue'
+import Changelog from '../views/Changelog.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/privacy',
     name: 'Privacy',
     component: Privacy
+  },
+  {
+    path: '/changelog',
+    name: 'Changelog',
+    component: Changelog
   }
 ]
 

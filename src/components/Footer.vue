@@ -13,6 +13,7 @@
         <div class="link-group">
           <h4>{{ t('footer.links') }}</h4>
           <router-link to="/">{{ t('nav.home') }}</router-link>
+          <router-link to="/changelog">{{ t('nav.changelog') }}</router-link>
           <router-link to="/privacy">{{ t('footer.privacy') }}</router-link>
         </div>
         <div class="link-group">

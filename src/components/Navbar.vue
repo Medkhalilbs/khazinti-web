@@ -9,6 +9,7 @@
       <div class="navbar-links">
         <router-link to="/" class="nav-link">{{ t('nav.home') }}</router-link>
         <router-link to="/privacy" class="nav-link">{{ t('nav.privacy') }}</router-link>
+        <router-link to="/changelog" class="nav-link">{{ t('nav.changelog') }}</router-link>
         <LanguageSwitcher />
         <button class="theme-toggle" @click="toggleTheme" aria-label="Toggle theme">
           <span v-if="isDark">☀️</span>
@@ -25,6 +26,7 @@
       <div v-if="mobileOpen" class="mobile-menu">
         <router-link to="/" class="nav-link" @click="mobileOpen = false">{{ t('nav.home') }}</router-link>
         <router-link to="/privacy" class="nav-link" @click="mobileOpen = false">{{ t('nav.privacy') }}</router-link>
+        <router-link to="/changelog" class="nav-link" @click="mobileOpen = false">{{ t('nav.changelog') }}</router-link>
         <LanguageSwitcher />
         <button class="theme-toggle mobile-theme-toggle" @click="toggleTheme">
           <span v-if="isDark">☀️ Light Mode</span>

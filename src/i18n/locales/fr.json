@@ -2,7 +2,12 @@
   "nav": {
     "home": "Accueil",
     "privacy": "Politique de confidentialité",
+    "changelog": "Nouveautés",
     "download": "Télécharger"
+  },
+  "changelog": {
+    "title": "Nouveautés",
+    "subtitle": "Découvrez les dernières mises à jour, améliorations et corrections dans Khazinti."
   },
   "hero": {
     "title": "Votre Compagnon Financier Personnel",

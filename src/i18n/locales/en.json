@@ -2,7 +2,12 @@
   "nav": {
     "home": "Home",
     "privacy": "Privacy Policy",
+    "changelog": "Changelog",
     "download": "Download"
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Discover the latest updates, improvements, and fixes in Khazinti."
   },
   "hero": {
     "title": "Your Personal Finance Companion",
