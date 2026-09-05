@@ -11,11 +11,13 @@
   },
   "hero": {
     "title": "Votre Compagnon Financier Personnel",
-    "subtitle": "Suivez vos dépenses, gérez vos budgets et faites croître votre patrimoine — tout hors-ligne, tout privé.",
+    "subtitle": "Suivez vos dépenses, gérez vos budgets et faites croître votre patrimoine - tout hors-ligne, tout privé.",
     "cta": "Télécharger",
-    "available": "Disponible uniquement sur Android"
+    "available": "Disponible uniquement sur Android",
+    "get_it_on": "Disponible sur"
   },
   "features": {
+    "eyebrow": "Tout ce dont vous avez besoin",
     "title": "Tout Ce Dont Vous Avez Besoin",
     "subtitle": "Des fonctionnalités puissantes conçues pour votre parcours financier",
     "offline": {
@@ -24,15 +26,15 @@
     },
     "multi_account": {
       "title": "Multi-Comptes",
-      "desc": "Gérez portefeuilles, comptes bancaires et épargne en un seul endroit."
+      "desc": "Gérez Banque, Espèces, Portefeuille, Épargne et Ticket Restaurant - tout en un seul endroit."
     },
     "budgets": {
       "title": "Budgets Intelligents",
-      "desc": "Définissez des budgets par catégorie et suivez vos dépenses en temps réel."
+      "desc": "Définissez des budgets par catégorie et suivez vos dépenses en temps réel avec des alertes intelligentes."
     },
     "multi_currency": {
       "title": "Multi-Devises",
-      "desc": "Support pour TND, EUR, USD et plus de 10 devises avec taux en direct."
+      "desc": "Support pour TND, EUR, USD et plus de 10 devises avec taux de change en direct."
     },
     "stats": {
       "title": "Analyses Visuelles",
@@ -41,7 +43,23 @@
     "secure": {
       "title": "Sécurité Bancaire",
       "desc": "Code PIN et authentification biométrique protègent vos données financières."
+    },
+    "subscriptions": {
+      "title": "Suivi d'Abonnements",
+      "desc": "Suivez vos paiements recurrents, recevez des rappels et confirmez les paiements manuellement."
+    },
+    "transactions": {
+      "title": "Transactions Avancées",
+      "desc": "Filtrez, copiez et visualisez les transactions en mode Liste, Grille ou Calendrier avec totaux quotidiens."
+    },
+    "number_format": {
+      "title": "Votre Format de Nombre",
+      "desc": "Choisissez votre format préféré - virgule-point, espace-virgule, ou auto - avec aperçu en direct."
     }
+  },
+  "cta": {
+    "title": "Pret a prendre le controle de vos finances ?",
+    "subtitle": "Rejoignez les utilisateurs qui gerent leur argent hors-ligne, en prive et en securite."
   },
   "footer": {
     "tagline": "Votre trésor, vos règles.",
@@ -54,63 +72,76 @@
   },
   "privacy": {
     "title": "Politique de Confidentialité",
-    "last_updated": "Dernière mise à jour : Mai 2026",
+    "last_updated": "Dernière mise à jour : Septembre 2026",
     "intro": {
       "title": "Introduction",
-      "content": "Khazinti (\"\u062e\u0632\u064a\u0646\u062a\u064a\") est une application mobile de gestion des finances personnelles. Nous nous engageons \u00e0 prot\u00e9ger votre vie priv\u00e9e et \u00e0 assurer la s\u00e9curit\u00e9 de vos informations personnelles. Cette Politique de Confidentialité explique comment nous traitons vos donn\u00e9es lorsque vous utilisez notre application."
+      "content": "Khazinti (\"خزينتي\") est une application de finances personnelles conçue avec la confidentialité comme principe fondamental. Cette politique explique quelles données sont collectées, comment elles sont stockées et vos droits en tant qu'utilisateur."
     },
     "data_collection": {
-      "title": "Donn\u00e9es Que Nous Collectons",
-      "content": "Khazinti est con\u00e7u avec une architecture privacy-first et offline-first. Voici ce que vous devez savoir :",
+      "title": "Données Collectées",
+      "content": "Khazinti collecte uniquement les données minimales nécessaires au fonctionnement. Toutes les données financières que vous saisissez sont stockées exclusivement sur votre appareil et ne sont jamais transmises à nos serveurs.",
       "items": [
-        "Donn\u00e9es Financi\u00e8res : Toutes vos donn\u00e9es financi\u00e8res (comptes, transactions, budgets, cat\u00e9gories) sont stock\u00e9es exclusivement sur votre appareil dans une base de donn\u00e9es SQLite locale.",
-        "Aucun Stockage Serveur : Nous ne collectons, ne transmettons ni ne stockons aucune de vos donn\u00e9es financi\u00e8res sur des serveurs externes.",
-        "Aucun Compte Requis : Vous n'avez pas besoin de cr\u00e9er un compte ou de fournir des informations personnelles pour utiliser Khazinti.",
-        "Taux de Change : Lorsque vous utilisez les fonctionnalit\u00e9s multi-devises, l'application r\u00e9cup\u00e8re les taux de change aupr\u00e8s d'APIs tierces (Frankfurter API). Seule la paire de devises est envoy\u00e9e \u2014 aucune donn\u00e9e personnelle.",
-        "Aucune Analyse : Nous n'utilisons aucun service d'analyse ou de suivi au sein de l'application."
+        "Données financières saisies (comptes, transactions, budgets, abonnements) - stockées localement sur votre appareil uniquement",
+        "Préférences de l'application (langue, thème, format de nombre, paramètres de notification) - stockées localement",
+        "Hash PIN et identifiants biométriques - stockés dans le stockage sécurisé de votre appareil (expo-secure-store), jamais transmis",
+        "Identifiants publicitaires anonymes - utilisés par Google AdMob pour diffuser des publicités (réinitialisables dans les paramètres de votre appareil)",
+        "Statut de consentement GDPR - stocké localement pour respecter vos préférences publicitaires"
       ]
     },
     "data_storage": {
-      "title": "Stockage & S\u00e9curit\u00e9 des Donn\u00e9es",
-      "content": "La s\u00e9curit\u00e9 de vos donn\u00e9es est notre priorit\u00e9 absolue :",
+      "title": "Stockage des Données",
+      "content": "Vos données financières sont stockées entièrement sur votre appareil via les mécanismes suivants :",
       "items": [
-        "Toutes les donn\u00e9es sont stock\u00e9es localement sur votre appareil dans une base de donn\u00e9es SQLite chiffr\u00e9e.",
-        "L'acc\u00e8s \u00e0 l'application est prot\u00e9g\u00e9 par un code PIN et/ou une authentification biom\u00e9trique (empreinte digitale, reconnaissance faciale).",
-        "Aucune donn\u00e9e n'est transmise \u00e0 nos serveurs ou \u00e0 un tiers (sauf les requ\u00eates de taux de change d\u00e9crites ci-dessus).",
-        "Si vous d\u00e9sinstallez l'application, toutes les donn\u00e9es sont d\u00e9finitivement supprim\u00e9es de votre appareil."
+        "Base de données SQLite (expo-sqlite) - tous les enregistrements financiers (comptes, transactions, budgets, abonnements, catégories)",
+        "AsyncStorage - indicateurs simples de l'application (ex. : si vous avez vu l'écran de bienvenue)",
+        "SecureStore (expo-secure-store) - identifiants sensibles tels que votre hash PIN et identifiant utilisateur",
+        "Aucune synchronisation cloud, aucune base de données distante, aucun stockage tiers de vos données financières"
       ]
     },
     "third_party": {
       "title": "Services Tiers",
-      "content": "Khazinti utilise un minimum de services tiers :",
+      "content": "Khazinti utilise un petit nombre de services tiers pour des fonctions spécifiques :",
       "items": [
-        "APIs de Taux de Change : Frankfurter API et Open Exchange Rates API sont utilis\u00e9es uniquement pour r\u00e9cup\u00e9rer les taux de change actuels. Seuls les codes de devises sont transmis \u2014 aucune donn\u00e9e personnelle ou financi\u00e8re.",
-        "App Store / Play Store : La distribution via l'Apple App Store et le Google Play Store est soumise \u00e0 leurs politiques de confidentialité respectives.",
-        "Aucun r\u00e9seau publicitaire, aucun SDK de r\u00e9seaux sociaux et aucune plateforme d'analyse ne sont int\u00e9gr\u00e9s dans l'application."
+        "Google AdMob - affiche des publicités interstitielles aux utilisateurs gratuits ; les utilisateurs Premium ne voient aucune publicité. AdMob peut collecter des identifiants publicitaires selon la politique de confidentialité de Google.",
+        "Google UMP (User Messaging Platform) - gère le consentement GDPR pour la publicité dans l'UE/EEE",
+        "Frankfurter API - fournit des taux de change en direct (aucune donnée personnelle envoyée, seulement une demande de code de devise)",
+        "Open Exchange Rates API - fournisseur de taux de change de secours (aucune donnée personnelle envoyée)"
+      ]
+    },
+    "notifications": {
+      "title": "Notifications",
+      "content": "Khazinti peut envoyer des notifications locales pour les raisons suivantes (toutes optionnelles, configurables dans Paramètres) :",
+      "items": [
+        "Alertes de budget - quand vos dépenses atteignent 50%, 75%, 90% ou 100% d'une limite de budget",
+        "Rappels de paiement d'abonnement - avant une date de renouvellement d'abonnement",
+        "Alertes de grande transaction - quand une transaction dépasse un seuil que vous définissez",
+        "Alertes de solde bas - quand le solde d'un compte tombe en dessous d'un seuil que vous définissez",
+        "Résumé quotidien des dépenses - un récapitulatif quotidien de vos revenus et dépenses"
       ]
     },
     "user_rights": {
       "title": "Vos Droits",
-      "content": "Puisque toutes vos donn\u00e9es sont stock\u00e9es localement sur votre appareil, vous avez un contr\u00f4le total :",
+      "content": "Puisque toutes vos données sont stockées localement sur votre appareil, vous avez un contrôle total :",
       "items": [
-        "Acc\u00e8s : Vous pouvez consulter toutes vos donn\u00e9es directement dans l'application \u00e0 tout moment.",
-        "Suppression : Vous pouvez supprimer tout ou partie de vos donn\u00e9es depuis l'application, ou en d\u00e9sinstallant l'application.",
-        "Export : Vous pouvez exporter vos donn\u00e9es dans des formats standards pour vos propres archives.",
-        "Portabilit\u00e9 : Vos donn\u00e9es vous appartiennent. Nous n'y avons jamais acc\u00e8s."
+        "Accès : toutes vos données sont visibles directement dans l'application",
+        "Suppression : utilisez l'option Réinitialisation d'usine dans Paramètres pour effacer définitivement toutes les données",
+        "Export : utilisez la fonctionnalité Sauvegarde & Restauration pour exporter vos données",
+        "Publicité : réinitialisez votre ID publicitaire dans les paramètres de votre appareil, ou refusez via le formulaire de consentement GDPR",
+        "Notifications : désactivez tout ou partie des types de notification dans les Paramètres de notification de l'application"
       ]
     },
     "children": {
-      "title": "Confidentialit\u00e9 des Enfants",
-      "content": "Khazinti ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles aupr\u00e8s d'enfants. Puisque l'application fonctionne enti\u00e8rement hors-ligne sans collecte de donn\u00e9es, il n'existe aucun m\u00e9canisme par lequel les donn\u00e9es des enfants pourraient \u00eatre collect\u00e9es."
+      "title": "Confidentialité des Enfants",
+      "content": "Khazinti n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants."
     },
     "changes": {
-      "title": "Modifications de Cette Politique",
-      "content": "Nous pouvons mettre \u00e0 jour cette Politique de Confidentialité de temps en temps. Tout changement sera refl\u00e9t\u00e9 dans la date de \"Dernière mise \u00e0 jour\" en haut de cette page. Nous vous encourageons \u00e0 consulter cette politique p\u00e9riodiquement."
+      "title": "Modifications de cette Politique",
+      "content": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Les modifications seront reflétées dans le changelog de l'application et sur cette page avec une date mise à jour."
     },
     "contact": {
       "title": "Nous Contacter",
-      "content": "Si vous avez des questions ou des pr\u00e9occupations concernant cette Politique de Confidentialité ou nos pratiques en mati\u00e8re de donn\u00e9es, veuillez nous contacter \u00e0 :",
-      "email": "support.khazinti{'@'}gmail.com"
+      "content": "Si vous avez des questions sur cette Politique de Confidentialité, veuillez nous contacter à :",
+      "email": "support.khazinti@gmail.com"
     }
   }
 }

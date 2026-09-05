@@ -5,6 +5,1020 @@ export function getChanges(entry, lang) {
 
 export const CHANGELOG = [
   {
+    version: '1.44.39',
+    date: '2026-08-23',
+    changes: {
+      en: [
+        'New: Animated launch screen with gold glow effect',
+        'Improved: Consistent back buttons across all screens',
+        'Improved: Ad display optimized for better timing',
+      ],
+      fr: [
+        'Nouveau : Écran de lancement animé avec effet doré',
+        'Amélioré : Boutons retour cohérents sur tous les écrans',
+        'Amélioré : Affichage des publicités optimisé',
+      ],
+      arTN: [
+        'جديد: شاشة تشغيل متحركة مع تأثير ذهبي',
+        'تحسين: أزرار الرجوع متسقة في كل الشاشات',
+        'تحسين: توقيت الإعلانات محسّن',
+      ],
+    },
+  },
+  {
+    version: '1.44.38',
+    date: '2026-08-23',
+    changes: {
+      en: [
+        'Fixed: Back buttons now display correctly in Arabic',
+        'Fixed: Tour restart from Help screen now works reliably',
+      ],
+      fr: [
+        'Corrigé : Boutons retour affichés correctement en arabe',
+        'Corrigé : Redémarrage du tour depuis l\'aide fonctionne correctement',
+      ],
+      arTN: [
+        'تصليح: أزرار الرجوع تظهر صح بالعربي',
+        'تصليح: إعادة تشغيل الجولة من المساعدة تخدم صح',
+      ],
+    },
+  },
+  {
+    version: '1.44.37',
+    date: '2026-08-21',
+    changes: {
+      en: [
+        'Improved: Ad timing optimized — fewer interruptions',
+        'New: Back buttons added to About, Help, Notifications, and Exchange Rates screens',
+        'Fixed: Dashboard transaction menu restored',
+      ],
+      fr: [
+        'Amélioré : Timing des publicités optimisé — moins d\'interruptions',
+        'Nouveau : Boutons retour ajoutés sur À propos, Aide, Notifications et Taux de change',
+        'Corrigé : Menu transactions du tableau de bord restauré',
+      ],
+      arTN: [
+        'تحسين: توقيت الإعلانات أحسن — أقل مقاطعات',
+        'جديد: أزرار رجوع في شاشات حول التطبيق، المساعدة، الإشعارات، وأسعار الصرف',
+        'تصليح: قائمة المعاملات في الصفحة الرئيسية رجعت',
+      ],
+    },
+  },
+  {
+    version: '1.44.36',
+    date: '2026-08-18',
+    changes: {
+      en: [
+        'New: First account is gold by default',
+        'Improved: Ads wait 10 minutes between displays',
+      ],
+      fr: [
+        'Nouveau : Le premier compte est doré par défaut',
+        'Amélioré : Les publicités attendent 10 minutes entre chaque affichage',
+      ],
+      arTN: [
+        'جديد: الحساب الأول يكون ذهبي بالافتراضي',
+        'تحسين: الإعلانات تستنى 10 دقائق بين كل عرض',
+      ],
+    },
+  },
+  {
+    version: '1.44.35',
+    date: '2026-08-18',
+    changes: {
+      en: [
+        'Fixed: Transactions screen crash during app tour resolved',
+      ],
+      fr: [
+        'Corrigé : Crash de l\'écran des transactions pendant le tour résolu',
+      ],
+      arTN: [
+        'تصليح: تعطل شاشة المعاملات أثناء الجولة تصلح',
+      ],
+    },
+  },
+  {
+    version: '1.44.34',
+    date: '2026-08-17',
+    changes: {
+      en: [
+        'New: Tour step 8 added — introduces the bottom navigation bar',
+        'Improved: Tour steps 4–7 now show full-page overviews of each section',
+      ],
+      fr: [
+        'Nouveau : Étape 8 du tour ajoutée — présente la barre de navigation inférieure',
+        'Amélioré : Les étapes 4–7 du tour affichent des aperçus pleine page de chaque section',
+      ],
+      arTN: [
+        'جديد: خطوة 8 في الجولة — تعرّف على شريط التنقل السفلي',
+        'تحسين: خطوات 4–7 تعرض نظرة عامة كاملة على كل قسم',
+      ],
+    },
+  },
+  {
+    version: '1.44.33',
+    date: '2026-08-16',
+    changes: {
+      en: [
+        'Fixed: Tour spotlight display issues on Android resolved',
+      ],
+      fr: [
+        'Corrigé : Problèmes d\'affichage du spotlight du tour sur Android résolus',
+      ],
+      arTN: [
+        'تصليح: مشاكل عرض spotlight في الجولة على Android تصلحت',
+      ],
+    },
+  },
+  {
+    version: '1.44.32',
+    date: '2026-08-16',
+    changes: {
+      en: [
+        'Improved: App tour simplified to 7 focused steps',
+      ],
+      fr: [
+        'Amélioré : Tour de l\'application simplifié à 7 étapes ciblées',
+      ],
+      arTN: [
+        'تحسين: جولة التطبيق تبسّطت لـ 7 خطوات مركّزة',
+      ],
+    },
+  },
+  {
+    version: '1.44.31',
+    date: '2026-08-16',
+    changes: {
+      en: [
+        'Fixed: Tour timer and navigation issues resolved',
+      ],
+      fr: [
+        'Corrigé : Problèmes de minuterie et de navigation du tour résolus',
+      ],
+      arTN: [
+        'تصليح: مشاكل المؤقت والتنقل في الجولة تصلحت',
+      ],
+    },
+  },
+  {
+    version: '1.44.30',
+    date: '2026-08-07',
+    changes: {
+      en: [
+        'Fixed: Tour spotlight and tooltip now stay in sync',
+      ],
+      fr: [
+        'Corrigé : Le spotlight et l\'infobulle du tour restent synchronisés',
+      ],
+      arTN: [
+        'تصليح: spotlight والتلميح في الجولة يبقوا متزامنين',
+      ],
+    },
+  },
+  {
+    version: '1.44.29',
+    date: '2026-08-07',
+    changes: {
+      en: [
+        'Improved: App tour streamlined to 16 steps for a faster onboarding experience',
+      ],
+      fr: [
+        'Amélioré : Tour de l\'application rationalisé à 16 étapes pour un onboarding plus rapide',
+      ],
+      arTN: [
+        'تحسين: جولة التطبيق تبسّطت لـ 16 خطوة لتجربة أسرع',
+      ],
+    },
+  },
+  {
+    version: '1.44.28',
+    date: '2026-08-07',
+    changes: {
+      en: [
+        'Improved: App tour now adapts to light and dark mode automatically',
+      ],
+      fr: [
+        'Amélioré : Le tour de l\'application s\'adapte automatiquement au mode clair et sombre',
+      ],
+      arTN: [
+        'تحسين: جولة التطبيق تتكيف تلقائياً مع الوضع الفاتح والداكن',
+      ],
+    },
+  },
+  {
+    version: '1.44.27',
+    date: '2026-08-07',
+    changes: {
+      en: [
+        'New: Gold border ring highlights the active feature during the tour',
+      ],
+      fr: [
+        'Nouveau : Anneau doré met en évidence la fonctionnalité active pendant le tour',
+      ],
+      arTN: [
+        'جديد: حلقة ذهبية تبرز الميزة النشطة أثناء الجولة',
+      ],
+    },
+  },
+  {
+    version: '1.44.26',
+    date: '2026-08-07',
+    changes: {
+      en: [
+        'New: Interactive app tour — launches on first use, restartable from Help',
+        'New: Tour progress is saved so you can resume where you left off',
+        'New: Tour fully supports Arabic with proper RTL layout',
+        'New: Haptic vibration feedback during tour steps',
+      ],
+      fr: [
+        'Nouveau : Tour interactif de l\'application — se lance au premier démarrage, redémarrable depuis l\'Aide',
+        'Nouveau : La progression du tour est sauvegardée pour reprendre où vous vous êtes arrêté',
+        'Nouveau : Tour entièrement en arabe avec mise en page RTL correcte',
+        'Nouveau : Retour haptique pendant les étapes du tour',
+      ],
+      arTN: [
+        'جديد: جولة تفاعلية في التطبيق — تبدأ أول مرة وتقدر تعيد تشغيلها من المساعدة',
+        'جديد: تقدم الجولة يتحفظ باش تكمل من وين وقفت',
+        'جديد: الجولة تدعم العربي بالكامل مع تخطيط RTL صحيح',
+        'جديد: اهتزاز لمسي أثناء خطوات الجولة',
+      ],
+    },
+  },
+  {
+    version: '1.44.25',
+    date: '2026-08-07',
+    changes: {
+      en: [
+        'Fixed: Budget and subscription form crash resolved',
+        'Improved: Number format selector is now more compact',
+      ],
+      fr: [
+        'Corrigé : Crash du formulaire budget et abonnement résolu',
+        'Amélioré : Sélecteur de format de nombre plus compact',
+      ],
+      arTN: [
+        'تصليح: تعطل نموذج الميزانية والاشتراك تصلح',
+        'تحسين: منتقي تنسيق الأرقام أصغر وأنظف',
+      ],
+    },
+  },
+  {
+    version: '1.44.24',
+    date: '2026-08-05',
+    changes: {
+      en: [
+        'Fixed: Number format now applies correctly on Accounts, Subscriptions, and subscription details',
+        'Fixed: Pending subscriptions now display in your chosen language and number format',
+        'Fixed: Payment history shows amounts in your selected format',
+        'New: More number format options available',
+        'Changed: Indian number format removed; existing users switched to US/UK format automatically',
+        'Improved: Number format picker redesigned with live preview',
+        'Improved: Large balances on dashboard now fit on one line',
+        'New: You can use comma as decimal separator in all forms',
+      ],
+      fr: [
+        'Corrigé : Le format de nombre s\'applique correctement sur Comptes, Abonnements et détails',
+        'Corrigé : Les abonnements en attente s\'affichent dans votre langue et format choisis',
+        'Corrigé : L\'historique des paiements affiche les montants dans votre format sélectionné',
+        'Nouveau : Plus d\'options de format de nombre disponibles',
+        'Changé : Format indien supprimé ; les utilisateurs existants passent automatiquement au format US/UK',
+        'Amélioré : Sélecteur de format redessiné avec aperçu en direct',
+        'Amélioré : Les grands soldes sur le tableau de bord tiennent sur une ligne',
+        'Nouveau : Vous pouvez utiliser la virgule comme séparateur décimal dans tous les formulaires',
+      ],
+      arTN: [
+        'تصليح: تنسيق الأرقام يتطبق صح في الحسابات والاشتراكات والتفاصيل',
+        'تصليح: الاشتراكات المعلقة تعرض بلغتك وتنسيقك المختار',
+        'تصليح: تاريخ الدفع يعرض المبالغ بتنسيقك المختار',
+        'جديد: خيارات تنسيق أرقام أكثر',
+        'تغيير: تنسيق الهند حذف؛ المستخدمين الحاليين انتقلوا تلقائياً للتنسيق الأمريكي',
+        'تحسين: منتقي التنسيق أعيد تصميمه مع معاينة مباشرة',
+        'تحسين: الأرصدة الكبيرة في الصفحة الرئيسية تتناسب في سطر واحد',
+        'جديد: تقدر تستعمل الفاصلة كفاصل عشري في كل النماذج',
+      ],
+    },
+  },
+  {
+    version: '1.44.23',
+    date: '2026-08-04',
+    changes: {
+      en: [
+        'Improved: Transaction cards are now uniform across all screens',
+        'New: More account colors to choose from — 16 options total',
+        'New: 20 new category icons added',
+        'New: You can now enter larger amounts (up to 12 digits)',
+        'Improved: Settings reorganized into a single Preferences section with number format options',
+        'Fixed: Back buttons now work consistently across all screens',
+      ],
+      fr: [
+        'Amélioré : Cartes de transaction uniformes sur tous les écrans',
+        'Nouveau : Plus de couleurs de compte — 16 options au total',
+        'Nouveau : 20 nouvelles icônes de catégorie ajoutées',
+        'Nouveau : Vous pouvez saisir des montants plus grands (jusqu\'à 12 chiffres)',
+        'Amélioré : Paramètres réorganisés en une section Préférences avec options de format',
+        'Corrigé : Boutons retour fonctionnent de manière cohérente sur tous les écrans',
+      ],
+      arTN: [
+        'تحسين: بطاقات المعاملات موحدة في كل الشاشات',
+        'جديد: ألوان حسابات أكثر — 16 خيار',
+        'جديد: 20 أيقونة فئة جديدة',
+        'جديد: تقدر تدخل مبالغ أكبر (حتى 12 رقم)',
+        'تحسين: الإعدادات منظمة في قسم تفضيلات واحد مع خيارات التنسيق',
+        'تصليح: أزرار الرجوع تخدم بانتظام في كل الشاشات',
+      ],
+    },
+  },
+  {
+    version: '1.44.22',
+    date: '2026-07-31',
+    changes: {
+      en: [
+        'Fixed: Money calculation corrected when deleting an account with transaction transfer',
+        'Fixed: Transfer reversal on delete verified for accuracy',
+        'Improved: Transaction cards on dashboard now match the transactions page style',
+        'Improved: Budget health calculation unified for multi-currency accounts',
+      ],
+      fr: [
+        'Corrigé : Calcul d\'argent corrigé lors de la suppression d\'un compte avec transfert',
+        'Corrigé : Inversion de transfert à la suppression vérifiée pour l\'exactitude',
+        'Amélioré : Cartes de transaction du tableau de bord correspondent au style de la page transactions',
+        'Amélioré : Calcul de santé du budget unifié pour les comptes multi-devises',
+      ],
+      arTN: [
+        'تصليح: حساب المال صح عند حذف حساب مع تحويل معاملات',
+        'تصليح: عكس التحويل عند الحذف تحقق من دقته',
+        'تحسين: بطاقات المعاملات في الصفحة الرئيسية تطابق نمط صفحة المعاملات',
+        'تحسين: حساب صحة الميزانية موحد للحسابات متعددة العملات',
+      ],
+    },
+  },
+  {
+    version: '1.44.21',
+    date: '2026-07-26',
+    changes: {
+      en: [
+        'New: Deleting an account now removes linked subscriptions (with warning)',
+        'New: Option to include or exclude specific accounts from total balance',
+        'New: Daily Reminder notification setting restored',
+        'New: Amount inputs now respect your currency decimal precision',
+        'New: Choose your number format (comma-dot, space-comma, or auto)',
+        'New: Category icons added to category list and icon selector',
+        'Improved: Transaction cards now show account color accent line',
+      ],
+      fr: [
+        'Nouveau : La suppression d\'un compte supprime les abonnements liés (avec avertissement)',
+        'Nouveau : Option pour inclure ou exclure des comptes du solde total',
+        'Nouveau : Paramètre de rappel quotidien restauré',
+        'Nouveau : Les champs de montant respectent la précision décimale de votre devise',
+        'Nouveau : Choisissez votre format de nombre (virgule-point, espace-virgule, ou auto)',
+        'Nouveau : Icônes de catégorie ajoutées à la liste et au sélecteur',
+        'Amélioré : Cartes de transaction avec ligne d\'accent couleur du compte',
+      ],
+      arTN: [
+        'جديد: حذف حساب يحذف الاشتراكات المرتبطة (مع تحذير)',
+        'جديد: خيار لتضمين أو استبعاد حسابات من الرصيد الإجمالي',
+        'جديد: إعداد التذكير اليومي رجع',
+        'جديد: حقول المبلغ تحترم دقة العملة العشرية',
+        'جديد: اختر تنسيق أرقامك (فاصلة-نقطة، مسافة-فاصلة، أو تلقائي)',
+        'جديد: أيقونات الفئات في قائمة الفئات ومنتقي الأيقونات',
+        'تحسين: بطاقات المعاملات تعرض خط لون الحساب',
+      ],
+    },
+  },
+  {
+    version: '1.44.20',
+    date: '2026-07-25',
+    changes: {
+      en: [
+        'New: Add Account card appears inline when no account is available',
+        'New: Tap account card body to edit directly',
+        'Improved: Initial balance is locked when editing an account to prevent balance errors',
+        'New: Type the account name to confirm before deleting an account',
+        'Improved: Back button on Subscription and Budget screens returns to More',
+      ],
+      fr: [
+        'Nouveau : Carte Ajouter un compte apparaît en ligne quand aucun compte n\'est disponible',
+        'Nouveau : Appuyez sur la carte du compte pour modifier directement',
+        'Amélioré : Le solde initial est verrouillé lors de la modification pour éviter les erreurs',
+        'Nouveau : Tapez le nom du compte pour confirmer avant de le supprimer',
+        'Amélioré : Bouton retour sur les écrans Abonnement et Budget revient à Plus',
+      ],
+      arTN: [
+        'جديد: بطاقة إضافة حساب تظهر مباشرة عند عدم وجود حسابات',
+        'جديد: اضغط على بطاقة الحساب للتعديل مباشرة',
+        'تحسين: الرصيد الأولي مقفل عند التعديل لتجنب أخطاء الرصيد',
+        'جديد: اكتب اسم الحساب للتأكيد قبل حذفه',
+        'تحسين: زر الرجوع في شاشات الاشتراك والميزانية يرجع لـ المزيد',
+      ],
+    },
+  },
+  {
+    version: '1.44.19',
+    date: '2026-07-25',
+    changes: {
+      en: [
+        'Fixed: Copying a transaction now pre-fills the description',
+        'Fixed: First ad of a new session now shows reliably',
+        'New: Account cards are now compact and grouped by type (Bank, Cash, Wallet, Savings, Meal Voucher)',
+        'New: Account edit and delete moved to a menu (tap the 3 dots)',
+        'New: Delete account now offers two choices — delete related transactions or move them to another account',
+      ],
+      fr: [
+        'Corrigé : La copie d\'une transaction pré-remplit la description',
+        'Corrigé : La première publicité d\'une nouvelle session s\'affiche correctement',
+        'Nouveau : Cartes de compte compactes et groupées par type (Banque, Espèces, Portefeuille, Épargne, Ticket Restaurant)',
+        'Nouveau : Modification et suppression de compte déplacées dans un menu (3 points)',
+        'Nouveau : La suppression d\'un compte propose deux choix — supprimer les transactions liées ou les déplacer',
+      ],
+      arTN: [
+        'تصليح: نسخ معاملة يملأ الوصف مسبقاً',
+        'تصليح: أول إعلان في جلسة جديدة يظهر صح',
+        'جديد: بطاقات الحسابات مدمجة ومجمعة حسب النوع (بنك، نقد، محفظة، ادخار، قسيمة وجبة)',
+        'جديد: تعديل وحذف الحساب انتقلا لقائمة (3 نقاط)',
+        'جديد: حذف الحساب يعطيك خيارين — حذف المعاملات المرتبطة أو نقلها لحساب آخر',
+      ],
+    },
+  },
+  {
+    version: '1.44.18',
+    date: '2026-07-24',
+    changes: {
+      en: [
+        'New: Bottom navigation reorganized to Home, Transactions, Accounts, More',
+        'New: Transaction cards now have a menu with edit, copy, and delete options',
+        'New: Quick shortcut to create categories directly from the subscription form',
+        'Fixed: Transfer form field order corrected',
+        'Improved: Ads configured for production with delayed first display',
+      ],
+      fr: [
+        'Nouveau : Navigation inférieure réorganisée en Accueil, Transactions, Comptes, Plus',
+        'Nouveau : Cartes de transaction avec menu modifier, copier, supprimer',
+        'Nouveau : Raccourci rapide pour créer des catégories depuis le formulaire d\'abonnement',
+        'Corrigé : Ordre des champs du formulaire de transfert corrigé',
+        'Amélioré : Publicités configurées pour la production avec premier affichage différé',
+      ],
+      arTN: [
+        'جديد: التنقل السفلي منظم من جديد: الرئيسية، المعاملات، الحسابات، المزيد',
+        'جديد: بطاقات المعاملات عندها قائمة: تعديل، نسخ، حذف',
+        'جديد: اختصار سريع لإنشاء الفئات مباشرة من نموذج الاشتراك',
+        'تصليح: ترتيب حقول نموذج التحويل صُحح',
+        'تحسين: الإعلانات مضبوطة للإنتاج مع تأخير العرض الأول',
+      ],
+    },
+  },
+  {
+    version: '1.44.17',
+    date: '2026-07-12',
+    changes: {
+      en: [
+        'Improved: Language and Arabic direction changes now apply with a single reload (no more double restart)',
+        'Fixed: Untranslated "INFO" section header in More menu now shows in all languages',
+      ],
+      fr: [
+        'Amélioré : Les changements de langue et de direction arabe s\'appliquent avec un seul rechargement',
+        'Corrigé : L\'en-tête de section "INFO" non traduit dans le menu Plus s\'affiche maintenant dans toutes les langues',
+      ],
+      arTN: [
+        'تحسين: تغييرات اللغة والاتجاه العربي تتطبق بإعادة تحميل واحدة (ما عاد فيه إعادة تشغيل مزدوجة)',
+        'تصليح: عنوان قسم "INFO" غير المترجم في قائمة المزيد يظهر الآن بكل اللغات',
+      ],
+    },
+  },
+  {
+    version: '1.44.16',
+    date: '2026-07-12',
+    changes: {
+      en: [
+        'Improved: Suspended subscriptions no longer appear in Upcoming Renewals (reappear on resume)',
+        'Improved: Language picker now pre-selects your active language',
+        'Fixed: Arabic now applies correctly across the entire app on language change and restart',
+      ],
+      fr: [
+        'Amélioré : Les abonnements suspendus n\'apparaissent plus dans les Renouvellements à venir',
+        'Amélioré : Le sélecteur de langue présélectionne votre langue active',
+        'Corrigé : L\'arabe s\'applique correctement dans toute l\'application au changement de langue et au redémarrage',
+      ],
+      arTN: [
+        'تحسين: الاشتراكات الموقوفة ما تظهرش في التجديدات القادمة (ترجع عند الاستئناف)',
+        'تحسين: منتقي اللغة يختار لغتك الحالية مسبقاً',
+        'تصليح: العربي يتطبق صح في كل التطبيق عند تغيير اللغة وإعادة التشغيل',
+      ],
+    },
+  },
+  {
+    version: '1.44.15',
+    date: '2026-07-11',
+    changes: {
+      en: [
+        'Fixed: Tunisian "Shopping" label corrected',
+        'Fixed: Arabic alignment fixed for section titles across 6 screens',
+        'Improved: Subscription menu is now instant (removed slide animation)',
+        'Fixed: Transaction list month names now show correctly in Tunisian',
+        'New: Readable calendar weekday labels in Arabic',
+        'Improved: More menu reorganized into Overview, Preferences, Save & Restore, and Info sections',
+        'Improved: About screen now shows the real Khazinti logo',
+      ],
+      fr: [
+        'Corrigé : Libellé "Shopping" tunisien corrigé',
+        'Corrigé : Alignement arabe corrigé pour les titres de section sur 6 écrans',
+        'Amélioré : Menu abonnement maintenant instantané (animation de glissement supprimée)',
+        'Corrigé : Noms des mois dans la liste des transactions s\'affichent correctement en tunisien',
+        'Nouveau : Libellés des jours de la semaine lisibles en arabe dans le calendrier',
+        'Amélioré : Menu Plus réorganisé en sections Vue d\'ensemble, Préférences, Sauvegarde & Restauration, et Info',
+        'Amélioré : L\'écran À propos affiche maintenant le vrai logo Khazinti',
+      ],
+      arTN: [
+        'تصليح: تسمية "Shopping" التونسية صُحّحت',
+        'تصليح: محاذاة العربي صُحّحت لعناوين الأقسام في 6 شاشات',
+        'تحسين: قائمة الاشتراك فورية الآن (حذف الرسوم المتحركة)',
+        'تصليح: أسماء الأشهر في قائمة المعاملات تظهر صح بالتونسي',
+        'جديد: تسميات أيام الأسبوع مقروءة بالعربي في التقويم',
+        'تحسين: قائمة المزيد منظمة في أقسام: نظرة عامة، تفضيلات، حفظ واستعادة، ومعلومات',
+        'تحسين: شاشة حول التطبيق تعرض الآن شعار Khazinti الحقيقي',
+      ],
+    },
+  },
+  {
+    version: '1.44.14',
+    date: '2026-07-11',
+    changes: {
+      en: [
+        'Fixed: Arabic layout corrected in subscription pending cards',
+        'Improved: Smoother scrolling in transaction list',
+        'Improved: Stronger security for biometric and PIN lock',
+        'Improved: Better translations across the app',
+      ],
+      fr: [
+        'Corrigé : Mise en page arabe corrigée dans les cartes d\'abonnement en attente',
+        'Amélioré : Défilement plus fluide dans la liste des transactions',
+        'Amélioré : Sécurité renforcée pour le verrouillage biométrique et PIN',
+        'Amélioré : Meilleures traductions dans toute l\'application',
+      ],
+      arTN: [
+        'تصليح: تخطيط العربي صُحّح في بطاقات الاشتراكات المعلقة',
+        'تحسين: تمرير أسلس في قائمة المعاملات',
+        'تحسين: أمان أقوى للقفل البيومتري والـ PIN',
+        'تحسين: ترجمات أفضل في كل التطبيق',
+      ],
+    },
+  },
+  {
+    version: '1.44.13',
+    date: '2026-07-07',
+    changes: {
+      en: [
+        'Fixed: Large transaction and low balance alerts now work for accounts in different currencies',
+        'Fixed: Phantom budget alerts no longer appear when changing notification settings',
+      ],
+      fr: [
+        'Corrigé : Les alertes de grande transaction et de solde bas fonctionnent pour les comptes en devises différentes',
+        'Corrigé : Les fausses alertes de budget n\'apparaissent plus lors du changement des paramètres de notification',
+      ],
+      arTN: [
+        'تصليح: تنبيهات المعاملات الكبيرة والرصيد المنخفض تخدم الآن للحسابات بعملات مختلفة',
+        'تصليح: تنبيهات الميزانية الوهمية ما تظهرش عند تغيير إعدادات الإشعارات',
+      ],
+    },
+  },
+  {
+    version: '1.44.12',
+    date: '2026-07-05',
+    changes: {
+      en: [
+        'New: Suspended subscriptions no longer receive payment reminders',
+        'Improved: Budget alerts now also check when you open the app',
+        'Fixed: Daily summary notification shows correct totals',
+      ],
+      fr: [
+        'Nouveau : Les abonnements suspendus ne reçoivent plus de rappels de paiement',
+        'Amélioré : Les alertes de budget vérifient maintenant aussi à l\'ouverture de l\'application',
+        'Corrigé : La notification de résumé quotidien affiche les totaux corrects',
+      ],
+      arTN: [
+        'جديد: الاشتراكات الموقوفة ما تستقبلش تذكيرات دفع',
+        'تحسين: تنبيهات الميزانية تتحقق أيضاً عند فتح التطبيق',
+        'تصليح: إشعار الملخص اليومي يعرض الإجماليات الصحيحة',
+      ],
+    },
+  },
+  {
+    version: '1.44.11',
+    date: '2026-07-05',
+    changes: {
+      en: [
+        'Fixed: Notification currency display corrected across all alert types',
+        'Improved: Cleaner settings layout with better section organization',
+        'Fixed: Subscription payment reminders now show the correct currency symbol',
+      ],
+      fr: [
+        'Corrigé : Affichage de la devise dans les notifications corrigé pour tous les types d\'alerte',
+        'Amélioré : Mise en page des paramètres plus propre avec une meilleure organisation des sections',
+        'Corrigé : Les rappels de paiement d\'abonnement affichent maintenant le bon symbole de devise',
+      ],
+      arTN: [
+        'تصليح: عرض العملة في الإشعارات صُحّح لكل أنواع التنبيهات',
+        'تحسين: تخطيط الإعدادات أنظف مع تنظيم أفضل للأقسام',
+        'تصليح: تذكيرات دفع الاشتراك تعرض الآن رمز العملة الصحيح',
+      ],
+    },
+  },
+  {
+    version: '1.44.10',
+    date: '2026-06-21',
+    changes: {
+      en: [
+        'Fixed: Subscription reminder notifications now show the correct currency symbol',
+        'Fixed: Large transaction alert now shows your actual spending amount',
+        'Fixed: Low balance alerts and daily summaries display accurate amounts and currencies',
+      ],
+      fr: [
+        'Corrigé : Les notifications de rappel d\'abonnement affichent maintenant le bon symbole de devise',
+        'Corrigé : L\'alerte de grande transaction affiche maintenant votre montant réel dépensé',
+        'Corrigé : Les alertes de solde bas et les résumés quotidiens affichent des montants et devises précis',
+      ],
+      arTN: [
+        'تصليح: إشعارات تذكير الاشتراك تعرض الآن رمز العملة الصحيح',
+        'تصليح: تنبيه المعاملة الكبيرة يعرض الآن مبلغ إنفاقك الفعلي',
+        'تصليح: تنبيهات الرصيد المنخفض والملخصات اليومية تعرض مبالغ وعملات دقيقة',
+      ],
+    },
+  },
+  {
+    version: '1.44.09',
+    date: '2026-06-19',
+    changes: {
+      en: [
+        'Fixed: Budget limit notifications now trigger reliably when spending increases',
+        'Fixed: Large transaction alerts accurately display the transaction details',
+        'Improved: Daily totals correctly convert transactions across different currencies',
+      ],
+      fr: [
+        'Corrigé : Les notifications de limite de budget se déclenchent maintenant de manière fiable',
+        'Corrigé : Les alertes de grande transaction affichent avec précision les détails',
+        'Amélioré : Les totaux quotidiens convertissent correctement les transactions en différentes devises',
+      ],
+      arTN: [
+        'تصليح: إشعارات حد الميزانية تنطلق بشكل موثوق عند زيادة الإنفاق',
+        'تصليح: تنبيهات المعاملات الكبيرة تعرض التفاصيل بدقة',
+        'تحسين: الإجماليات اليومية تحول المعاملات بشكل صحيح عبر العملات المختلفة',
+      ],
+    },
+  },
+  {
+    version: '1.44.08',
+    date: '2026-06-17',
+    changes: {
+      en: [
+        'Fixed: Suspended subscriptions no longer receive payment reminders or overdue alerts',
+        'Improved: Budget alert checks now run automatically each time you open the app',
+        'New: Transactions grouped by day with daily spending totals',
+        'Fixed: Calendar view displays accurate daily totals converted to your main currency',
+        'Changed: Expenses by category moved to Statistics screen for a cleaner dashboard',
+      ],
+      fr: [
+        'Corrigé : Les abonnements suspendus ne reçoivent plus de rappels de paiement ni d\'alertes de retard',
+        'Amélioré : Les vérifications d\'alerte de budget s\'exécutent automatiquement à chaque ouverture',
+        'Nouveau : Transactions groupées par jour avec totaux de dépenses quotidiens',
+        'Corrigé : La vue calendrier affiche des totaux quotidiens précis convertis dans votre devise principale',
+        'Changé : Dépenses par catégorie déplacées vers l\'écran Statistiques pour un tableau de bord plus propre',
+      ],
+      arTN: [
+        'تصليح: الاشتراكات الموقوفة ما تستقبلش تذكيرات دفع أو تنبيهات تأخر',
+        'تحسين: فحوصات تنبيه الميزانية تعمل تلقائياً في كل مرة تفتح فيها التطبيق',
+        'جديد: المعاملات مجمعة حسب اليوم مع إجماليات الإنفاق اليومية',
+        'تصليح: عرض التقويم يعرض إجماليات يومية دقيقة محولة لعملتك الرئيسية',
+        'تغيير: المصروفات حسب الفئة انتقلت لشاشة الإحصائيات لتنظيف الصفحة الرئيسية',
+      ],
+    },
+  },
+  {
+    version: '1.44.07',
+    date: '2026-06-16',
+    changes: {
+      en: [
+        'Fixed: Budget alerts now fire progressively across all thresholds',
+        'Fixed: Subscription payment reminders now fire reliably on the correct day',
+        'Fixed: Large transaction alert compares expenses in your main currency',
+        'Improved: Budget summary card redesigned with a cleaner layout',
+      ],
+      fr: [
+        'Corrigé : Les alertes de budget se déclenchent progressivement sur tous les seuils',
+        'Corrigé : Les rappels de paiement d\'abonnement se déclenchent de manière fiable le bon jour',
+        'Corrigé : L\'alerte de grande transaction compare les dépenses dans votre devise principale',
+        'Amélioré : Carte de résumé de budget redessinée avec une mise en page plus propre',
+      ],
+      arTN: [
+        'تصليح: تنبيهات الميزانية تنطلق تدريجياً عبر كل الحدود',
+        'تصليح: تذكيرات دفع الاشتراك تنطلق بشكل موثوق في اليوم الصحيح',
+        'تصليح: تنبيه المعاملة الكبيرة يقارن المصروفات بعملتك الرئيسية',
+        'تحسين: بطاقة ملخص الميزانية أعيد تصميمها بتخطيط أنظف',
+      ],
+    },
+  },
+  {
+    version: '1.44.06',
+    date: '2026-06-15',
+    changes: {
+      en: [
+        'Fixed: Budget alerts now work accurately for accounts in all currencies',
+        'Fixed: Prevented creating budgets for past months',
+        'Improved: Budget cards now clearly show remaining amount and progress status',
+      ],
+      fr: [
+        'Corrigé : Les alertes de budget fonctionnent avec précision pour les comptes dans toutes les devises',
+        'Corrigé : Empêche la création de budgets pour les mois passés',
+        'Amélioré : Les cartes de budget affichent clairement le montant restant et le statut de progression',
+      ],
+      arTN: [
+        'تصليح: تنبيهات الميزانية تخدم بدقة للحسابات بكل العملات',
+        'تصليح: منع إنشاء ميزانيات للأشهر الماضية',
+        'تحسين: بطاقات الميزانية تعرض بوضوح المبلغ المتبقي وحالة التقدم',
+      ],
+    },
+  },
+  {
+    version: '1.44.05',
+    date: '2026-06-15',
+    changes: {
+      en: [
+        'Improved: Cleaner transactions screen with simplified filtering options',
+        'Changed: Date range filter moved into the filter menu for a more spacious layout',
+        'Fixed: Daily totals show accurate converted amounts when using multiple currencies',
+      ],
+      fr: [
+        'Amélioré : Écran des transactions plus propre avec des options de filtrage simplifiées',
+        'Changé : Filtre de plage de dates déplacé dans le menu de filtre pour une mise en page plus spacieuse',
+        'Corrigé : Les totaux quotidiens affichent des montants convertis précis avec plusieurs devises',
+      ],
+      arTN: [
+        'تحسين: شاشة المعاملات أنظف مع خيارات تصفية مبسطة',
+        'تغيير: فلتر نطاق التاريخ انتقل لقائمة الفلتر لتخطيط أكثر اتساعاً',
+        'تصليح: الإجماليات اليومية تعرض مبالغ محولة دقيقة عند استخدام عملات متعددة',
+      ],
+    },
+  },
+  {
+    version: '1.44.04',
+    date: '2026-06-15',
+    changes: {
+      en: [
+        'Fixed: Notification alert fields — keyboard no longer closes while typing threshold amounts',
+      ],
+      fr: [
+        'Corrigé : Champs d\'alerte de notification — le clavier ne se ferme plus lors de la saisie des montants seuil',
+      ],
+      arTN: [
+        'تصليح: حقول تنبيه الإشعارات — لوحة المفاتيح ما تقفلش عند كتابة مبالغ الحد',
+      ],
+    },
+  },
+  {
+    version: '1.44.03',
+    date: '2026-06-14',
+    changes: {
+      en: [
+        'Fixed: Transaction screen crash ("Rendered fewer hooks than expected") resolved',
+        'Fixed: Notification alert fields — keyboard no longer dismisses while typing threshold amounts',
+      ],
+      fr: [
+        'Corrigé : Crash de l\'écran des transactions résolu',
+        'Corrigé : Champs d\'alerte de notification — le clavier ne se ferme plus lors de la saisie',
+      ],
+      arTN: [
+        'تصليح: تعطل شاشة المعاملات تصلح',
+        'تصليح: حقول تنبيه الإشعارات — لوحة المفاتيح ما تختفيش عند الكتابة',
+      ],
+    },
+  },
+  {
+    version: '1.44.02',
+    date: '2026-06-14',
+    changes: {
+      en: [
+        'Fixed: Transaction screen crash on open resolved',
+        'Fixed: Notification threshold fields — keyboard no longer closes while typing',
+        'Fixed: Subscription card bell icon removed to reclaim card space',
+      ],
+      fr: [
+        'Corrigé : Crash de l\'écran des transactions à l\'ouverture résolu',
+        'Corrigé : Champs de seuil de notification — le clavier ne se ferme plus lors de la saisie',
+        'Corrigé : Icône de cloche de la carte d\'abonnement supprimée pour récupérer de l\'espace',
+      ],
+      arTN: [
+        'تصليح: تعطل شاشة المعاملات عند الفتح تصلح',
+        'تصليح: حقول حد الإشعارات — لوحة المفاتيح ما تقفلش عند الكتابة',
+        'تصليح: أيقونة الجرس في بطاقة الاشتراك حُذفت لاستعادة مساحة البطاقة',
+      ],
+    },
+  },
+  {
+    version: '1.44.01',
+    date: '2026-06-14',
+    changes: {
+      en: [
+        'Fixed: Transaction screen crash on open resolved',
+        'Fixed: Notification threshold fields — keyboard no longer closes while typing',
+        'Fixed: Subscriptions tab icon updated to CalendarClock',
+        'Fixed: Budget FAB button icon changed to Target',
+        'Fixed: Big transaction notification now shows the actual transaction amount and threshold correctly',
+        'Fixed: FAB touch target clipping on Android fixed',
+      ],
+      fr: [
+        'Corrigé : Crash de l\'écran des transactions résolu',
+        'Corrigé : Champs de seuil de notification — le clavier ne se ferme plus',
+        'Corrigé : Icône de l\'onglet Abonnements mise à jour',
+        'Corrigé : Icône du bouton FAB Budget changée',
+        'Corrigé : La notification de grande transaction affiche maintenant le montant et le seuil corrects',
+        'Corrigé : Clipping de la cible tactile FAB sur Android corrigé',
+      ],
+      arTN: [
+        'تصليح: تعطل شاشة المعاملات تصلح',
+        'تصليح: حقول حد الإشعارات — لوحة المفاتيح ما تقفلش',
+        'تصليح: أيقونة تبويب الاشتراكات محدّثة',
+        'تصليح: أيقونة زر FAB الميزانية تغيرت',
+        'تصليح: إشعار المعاملة الكبيرة يعرض الآن المبلغ والحد الصحيحين',
+        'تصليح: قطع هدف اللمس FAB على Android تصلح',
+      ],
+    },
+  },
+  {
+    version: '1.44.00',
+    date: '2026-06-12',
+    changes: {
+      en: [
+        'New: Transaction Filter Sheet — filter by date range, accounts, categories, type, and amount range',
+        'New: Account quick-filter chips — one-tap account filtering above the transaction list',
+        'New: View mode toggle — switch between List, Grid, and Calendar views (saved across sessions)',
+        'New: Grid view — compact 2-column card layout for at-a-glance browsing',
+        'New: Calendar view — monthly grid showing daily income/expense totals; tap a day to filter',
+        'New: Daily totals in section headers — each date group shows its +income and −expense total',
+      ],
+      fr: [
+        'Nouveau : Feuille de filtre de transactions — filtrez par plage de dates, comptes, catégories, type et montant',
+        'Nouveau : Chips de filtre rapide de compte — filtrage d\'un compte en un tap au-dessus de la liste',
+        'Nouveau : Bascule de mode de vue — basculez entre les vues Liste, Grille et Calendrier (sauvegardées)',
+        'Nouveau : Vue Grille — mise en page compacte à 2 colonnes pour une navigation rapide',
+        'Nouveau : Vue Calendrier — grille mensuelle avec totaux quotidiens revenus/dépenses ; appuyez sur un jour pour filtrer',
+        'Nouveau : Totaux quotidiens dans les en-têtes de section — chaque groupe de dates affiche son total +revenu et −dépense',
+      ],
+      arTN: [
+        'جديد: ورقة فلتر المعاملات — فلتر حسب نطاق التاريخ، الحسابات، الفئات، النوع، ونطاق المبلغ',
+        'جديد: رقائق فلتر الحساب السريع — فلترة حساب بضغطة واحدة فوق قائمة المعاملات',
+        'جديد: تبديل وضع العرض — تبديل بين عرض القائمة والشبكة والتقويم (محفوظ بين الجلسات)',
+        'جديد: عرض الشبكة — تخطيط بطاقة مدمج بعمودين للتصفح السريع',
+        'جديد: عرض التقويم — شبكة شهرية تعرض إجماليات الدخل/المصروف اليومية؛ اضغط على يوم للفلترة',
+        'جديد: الإجماليات اليومية في رؤوس الأقسام — كل مجموعة تواريخ تعرض إجمالي +الدخل و−المصروف',
+      ],
+    },
+  },
+  {
+    version: '1.43.01',
+    date: '2026-06-12',
+    changes: {
+      en: [
+        'Fixed: Action button (FAB) tap targets optimized to prevent mis-clicks',
+        'Fixed: Action button backdrop correctly blocks background tap interactions',
+        'Fixed: Subscription reminder days chips layout wraps correctly on narrow screens',
+        'Fixed: Budget alert threshold inputs keep keyboard focus while typing',
+        'Fixed: Currency suffixes displayed correctly next to notification threshold settings',
+        'Fixed: Subscription reminder notifications now display correct icon',
+        'Fixed: Low balance alerts with automated cross-currency conversion',
+        'Fixed: Budget threshold alerts correctly restricted to the current month',
+        'New: Configurable budget alert threshold percentages (50%, 75%, 90%, 100%)',
+        'New: Individual notification deletion from history logs list',
+      ],
+      fr: [
+        'Corrigé : Cibles de tap du bouton d\'action optimisées pour éviter les mauvais clics',
+        'Corrigé : L\'arrière-plan du bouton d\'action bloque correctement les interactions en arrière-plan',
+        'Corrigé : La mise en page des chips de jours de rappel d\'abonnement s\'adapte correctement',
+        'Corrigé : Les champs de seuil d\'alerte de budget gardent le focus du clavier',
+        'Corrigé : Suffixes de devise affichés correctement dans les paramètres de seuil',
+        'Corrigé : Les notifications de rappel d\'abonnement affichent maintenant la bonne icône',
+        'Corrigé : Alertes de solde bas avec conversion automatique entre devises',
+        'Corrigé : Alertes de seuil de budget correctement restreintes au mois en cours',
+        'Nouveau : Pourcentages de seuil d\'alerte de budget configurables (50%, 75%, 90%, 100%)',
+        'Nouveau : Suppression individuelle de notification depuis la liste des journaux',
+      ],
+      arTN: [
+        'تصليح: أهداف الضغط لزر الإجراء محسّنة لمنع النقرات الخاطئة',
+        'تصليح: خلفية زر الإجراء تحجب تفاعلات الخلفية بشكل صحيح',
+        'تصليح: تخطيط رقائق أيام تذكير الاشتراك يلتف بشكل صحيح على الشاشات الضيقة',
+        'تصليح: حقول حد تنبيه الميزانية تحتفظ بتركيز لوحة المفاتيح أثناء الكتابة',
+        'تصليح: لاحقات العملة تعرض بشكل صحيح بجانب إعدادات الحد',
+        'تصليح: إشعارات تذكير الاشتراك تعرض الآن الأيقونة الصحيحة',
+        'تصليح: تنبيهات الرصيد المنخفض مع تحويل تلقائي بين العملات',
+        'تصليح: تنبيهات حد الميزانية مقيدة بشكل صحيح بالشهر الحالي',
+        'جديد: نسب حد تنبيه الميزانية قابلة للتكوين (50%، 75%، 90%، 100%)',
+        'جديد: حذف إشعار فردي من قائمة سجلات التاريخ',
+      ],
+    },
+  },
+  {
+    version: '1.42.02',
+    date: '2026-06-09',
+    changes: {
+      en: [
+        'Fixed: Transaction cards no longer respond to swipe-left (only swipe-right to delete)',
+        'Fixed: Removed blue square artifact behind the action button on Android',
+        'Improved: Action button menu redesigned with gold accent line, larger tap targets, rounded icon badges',
+      ],
+      fr: [
+        'Corrigé : Les cartes de transaction ne répondent plus au glissement vers la gauche (seulement vers la droite pour supprimer)',
+        'Corrigé : Artefact carré bleu derrière le bouton d\'action sur Android supprimé',
+        'Amélioré : Menu du bouton d\'action redessiné avec ligne d\'accent dorée, cibles plus grandes, badges d\'icône arrondis',
+      ],
+      arTN: [
+        'تصليح: بطاقات المعاملات ما تستجيبش للسحب لليسار (فقط لليمين للحذف)',
+        'تصليح: مربع أزرق خلف زر الإجراء على Android حُذف',
+        'تحسين: قائمة زر الإجراء أعيد تصميمها بخط ذهبي، أهداف أكبر، شارات أيقونة مستديرة',
+      ],
+    },
+  },
+  {
+    version: '1.42.01',
+    date: '2026-06-08',
+    changes: {
+      en: [
+        'Fixed: Transaction cards now fully follow light and dark theme',
+        'Fixed: Dashboard hero card adapts to light mode with proper gradients and text colors',
+        'Fixed: ConfirmSheet dialog matches your chosen theme',
+        'Improved: FAB shadow changed to neutral black for a cleaner look',
+        'Improved: FAB action chips redesigned with fused icon+label layout, RTL-aware',
+        'Improved: FAB idle pulse animation removed for instant tap response',
+        'New: Active subscriptions show "in X days" badge with full i18n support (EN/FR/arTN)',
+      ],
+      fr: [
+        'Corrigé : Les cartes de transaction suivent maintenant entièrement le thème clair et sombre',
+        'Corrigé : La carte héro du tableau de bord s\'adapte au mode clair avec des dégradés et couleurs de texte appropriés',
+        'Corrigé : La boîte de dialogue ConfirmSheet correspond à votre thème choisi',
+        'Amélioré : Ombre du FAB changée en noir neutre pour un aspect plus propre',
+        'Amélioré : Chips d\'action FAB redessinées avec mise en page icône+étiquette fusionnée, compatible RTL',
+        'Amélioré : Animation de pulsation inactive du FAB supprimée pour une réponse instantanée',
+        'Nouveau : Les abonnements actifs affichent un badge "dans X jours" avec support i18n complet',
+      ],
+      arTN: [
+        'تصليح: بطاقات المعاملات تتبع الآن الوضع الفاتح والداكن بالكامل',
+        'تصليح: بطاقة الصفحة الرئيسية تتكيف مع الوضع الفاتح بتدرجات وألوان نص مناسبة',
+        'تصليح: مربع حوار ConfirmSheet يطابق الوضع المختار',
+        'تحسين: ظل FAB تغير للأسود المحايد لمظهر أنظف',
+        'تحسين: رقائق إجراء FAB أعيد تصميمها بتخطيط أيقونة+تسمية مدمج، متوافق مع RTL',
+        'تحسين: رسوم متحركة نبض FAB الخاملة حُذفت للاستجابة الفورية',
+        'جديد: الاشتراكات النشطة تعرض شارة "في X أيام" مع دعم i18n كامل',
+      ],
+    },
+  },
+  {
+    version: '1.42.00',
+    date: '2026-06-08',
+    changes: {
+      en: [
+        'New: Swipe gestures now show icons — trash when deleting, pause/play when suspending or reactivating a subscription',
+        'New: Transaction cards support swipe-to-delete, consistent with subscriptions',
+        'Improved: Action button (FAB) completely redesigned — vertical list layout, bottom-right position, smooth animation',
+        'Improved: Action button pulse animation only plays when idle — stops on tap',
+        'Improved: Tapping an action button now opens the form immediately with no delay',
+      ],
+      fr: [
+        'Nouveau : Les gestes de glissement affichent maintenant des icônes — corbeille pour supprimer, pause/lecture pour suspendre ou réactiver un abonnement',
+        'Nouveau : Les cartes de transaction supportent le glissement pour supprimer, cohérent avec les abonnements',
+        'Amélioré : Bouton d\'action (FAB) complètement redessiné — liste verticale, position en bas à droite, animation fluide',
+        'Amélioré : L\'animation de pulsation du bouton d\'action ne joue que lorsqu\'il est inactif',
+        'Amélioré : Appuyer sur un bouton d\'action ouvre maintenant le formulaire immédiatement',
+      ],
+      arTN: [
+        'جديد: إيماءات السحب تعرض الآن أيقونات — سلة للحذف، إيقاف مؤقت/تشغيل لتعليق أو إعادة تفعيل اشتراك',
+        'جديد: بطاقات المعاملات تدعم السحب للحذف، متسقة مع الاشتراكات',
+        'تحسين: زر الإجراء (FAB) أعيد تصميمه بالكامل — تخطيط قائمة عمودية، موضع أسفل اليمين، رسوم متحركة سلسة',
+        'تحسين: رسوم متحركة نبض زر الإجراء تعمل فقط عند الخمول — تتوقف عند الضغط',
+        'تحسين: الضغط على زر إجراء يفتح النموذج فوراً بدون تأخير',
+      ],
+    },
+  },
+  {
+    version: '1.41.11',
+    date: '2026-06-07',
+    changes: {
+      en: [
+        'Fixed: Notification alerts and pop-up messages now match your chosen light or dark theme',
+        'Fixed: Dashboard cards and interface screens match theme preferences properly',
+        'Fixed: Back navigation button behavior improved on all screens',
+        'Improved: More compact form layouts for transactions, accounts, budgets, and subscriptions',
+      ],
+      fr: [
+        'Corrigé : Les alertes de notification et messages contextuels correspondent maintenant à votre thème clair ou sombre',
+        'Corrigé : Les cartes du tableau de bord et les écrans d\'interface correspondent correctement aux préférences de thème',
+        'Corrigé : Comportement du bouton de navigation retour amélioré sur tous les écrans',
+        'Amélioré : Mises en page de formulaire plus compactes pour les transactions, comptes, budgets et abonnements',
+      ],
+      arTN: [
+        'تصليح: تنبيهات الإشعارات والرسائل المنبثقة تطابق الآن الوضع الفاتح أو الداكن المختار',
+        'تصليح: بطاقات الصفحة الرئيسية وشاشات الواجهة تطابق تفضيلات الوضع بشكل صحيح',
+        'تصليح: سلوك زر التنقل للخلف محسّن على جميع الشاشات',
+        'تحسين: تخطيطات نماذج أكثر إحكاماً للمعاملات والحسابات والميزانيات والاشتراكات',
+      ],
+    },
+  },
+  {
     version: '1.41.00',
     date: '2026-05-10',
     changes: {
@@ -24,7 +1038,7 @@ export const CHANGELOG = [
         'جديد: إشهارات AdMob (البريميوم ما يشوفوش إشهارات)',
         'جديد: نموذج موافقة GDPR Google UMP',
         'جديد: حالة البريميوم في الإعدادات',
-        'تصليح: مشكلة شاشة البداية في الأندرويد',
+        'تصليح: مشكلة شاشة البداية في Android',
       ],
     },
   },
@@ -45,15 +1059,15 @@ export const CHANGELOG = [
         'Corrigé : Dates cohérentes entre Dashboard et page Abonnements',
         'Corrigé : Cartes en attente pleine largeur',
         'Corrigé : Montants budget ne débordent plus',
-        "Corrigé : Devise hors-ligne n'affiche plus de montants erronés",
+        'Corrigé : Devise hors-ligne n\'affiche plus de montants erronés',
         'Amélioré : Couleurs barre de progression budget selon le % consommé',
       ],
       arTN: [
         'تصليح: التنبيهات تتحاذى لليمين بالعربي',
         'تصليح: التواريخ متوافقة بين الصفحة الرئيسية وصفحة الاشتراكات',
-        'تصليح: كروت الانتظار تاخذ العرض الكامل',
+        'تصليح: كروت الانتظار تأخذ العرض الكامل',
         'تصليح: المبالغ الكبيرة ما تخرجش من الكارت',
-        'تصليح: العملة بدون انترنت ما تعطيش مبالغ غالطة',
+        'تصليح: العملة بدون انترنت ما تعطيش مبالغ غلط',
         'تحسين: ألوان شريط الميزانية حسب نسبة الاستهلاك',
       ],
     },
@@ -73,18 +1087,18 @@ export const CHANGELOG = [
       fr: [
         'Système de notification unifié (toast unique en bas)',
         'Correction de la troncature du texte dans les notifications',
-        "Correction du layout RTL pour l'arabe (toast + cartes abonnement)",
-        'Correction de la locale des dates (mois en français)',
-        'Correction du bug timezone sur la date de facturation journalière',
+        'Correction de la mise en page RTL pour l\'arabe (toast + cartes d\'abonnement)',
+        'Correction du locale de date (mois français s\'affichent correctement)',
+        'Correction du problème de fuseau horaire pour la date de facturation quotidienne',
         'Ajout de limites de longueur sur tous les champs de formulaire',
       ],
       arTN: [
-        'نظام إشعارات موحّد (toast واحد في الأسفل)',
-        'تصليح النص المقطوع في الإشعارات',
-        'تصليح تخطيط RTL بالعربي (toast + كروت الاشتراكات)',
-        'تصليح لغة التواريخ (الأشهر بالفرنسية تظهر صحيحة)',
-        'تصليح مشكل timezone في تاريخ الدفع اليومي',
-        'إضافة حدود طول على كل حقول الفورم',
+        'نظام إشعارات موحد (toast واحد في الأسفل)',
+        'تصليح اقتطاع النص في الإشعارات',
+        'تصليح تخطيط RTL للعربي (toast + كروت الاشتراك)',
+        'تصليح locale التاريخ (الأشهر الفرنسية تعرض صح)',
+        'تصليح مشكلة المنطقة الزمنية لتاريخ الفاتورة اليومية',
+        'إضافة حدود طول المدخلات في كل حقول النماذج',
       ],
     },
   },
@@ -93,25 +1107,25 @@ export const CHANGELOG = [
     date: '2026-05-03',
     changes: {
       en: [
-        'Fixed subscription toast messages showing raw translation keys',
-        'Added time to confirmed subscription transactions',
-        'Fixed scrolling issue when multiple pending subscriptions are present',
-        'Added billing date display on pending subscription cards',
-        'Added optional category selector to subscription form',
+        'Fixed: Subscription toast raw keys resolved',
+        'Fixed: Transaction timestamps corrected',
+        'Fixed: Pending scroll issue resolved',
+        'Fixed: Billing date display corrected',
+        'New: Optional category selector in subscription form',
       ],
       fr: [
-        'Correction des messages de confirmation affichant des clés brutes',
-        'Ajout de l\'heure aux transactions d\'abonnement confirmées',
-        'Correction du problème de défilement avec plusieurs abonnements en attente',
-        'Ajout de la date de facturation sur les cartes d\'abonnement en attente',
-        'Ajout d\'un sélecteur de catégorie optionnel au formulaire d\'abonnement',
+        'Corrigé : Clés brutes du toast d\'abonnement résolues',
+        'Corrigé : Horodatages des transactions corrigés',
+        'Corrigé : Problème de défilement en attente résolu',
+        'Corrigé : Affichage de la date de facturation corrigé',
+        'Nouveau : Sélecteur de catégorie optionnel dans le formulaire d\'abonnement',
       ],
       arTN: [
-        'إصلاح إشعارات الاشتراكات اللي كانت تظهر فيها أكواد الترجمة',
-        'إضافة الوقت لمعاملات الاشتراكات المؤكدة',
-        'إصلاح مشكلة التمرير كي يبدا فما برشا اشتراكات مستحقة',
-        'إضافة تاريخ الفوترة في بطاقات الاشتراكات المستحقة',
-        'إضافة اختيار الفئة (اختياري) في نموذج الاشتراك',
+        'تصليح: مفاتيح toast الاشتراك الخام تصلحت',
+        'تصليح: طوابع وقت المعاملات صُحّحت',
+        'تصليح: مشكلة التمرير المعلق تصلحت',
+        'تصليح: عرض تاريخ الفاتورة صُحّح',
+        'جديد: منتقي الفئة اختياري في نموذج الاشتراك',
       ],
     },
   },
@@ -120,19 +1134,19 @@ export const CHANGELOG = [
     date: '2026-05-02',
     changes: {
       en: [
-        'Fixed: Confirm button now works correctly for pending subscriptions',
-        'Pending subscriptions update in real-time (no restart needed)',
-        'Confirm/Skip buttons now available on the Subscriptions tab too',
+        'Fixed: Confirm button issue resolved',
+        'New: Real-time pending subscription updates',
+        'New: Confirm/Skip actions on Subscriptions tab',
       ],
       fr: [
-        'Correction : le bouton Confirmer fonctionne maintenant correctement',
-        'Les abonnements en attente se mettent à jour en temps réel',
-        'Boutons Confirmer/Ignorer disponibles aussi dans l\'onglet Abonnements',
+        'Corrigé : Problème de bouton de confirmation résolu',
+        'Nouveau : Mises à jour en temps réel des abonnements en attente',
+        'Nouveau : Actions Confirmer/Ignorer sur l\'onglet Abonnements',
       ],
       arTN: [
-        'إصلاح: زر التأكيد يعمل الآن بشكل صحيح',
-        'الاشتراكات المستحقة تتحدث في الوقت الحقيقي',
-        'أزرار التأكيد/التخطي متاحة أيضاً في صفحة الاشتراكات',
+        'تصليح: مشكلة زر التأكيد تصلحت',
+        'جديد: تحديثات فورية للاشتراكات المعلقة',
+        'جديد: إجراءات تأكيد/تخطي في تبويب الاشتراكات',
       ],
     },
   },
@@ -141,25 +1155,22 @@ export const CHANGELOG = [
     date: '2026-05-01',
     changes: {
       en: [
-        'Subscriptions now require manual confirmation before impacting your finances',
-        'New Pending Subscriptions section on Dashboard',
-        'Confirm or Skip each billing cycle manually',
-        'Fixed: billing date now saves correctly when editing a subscription',
-        'Fixed: auto-processing of subscriptions on app open removed',
+        'New: Manual subscription confirmation — you decide when to record a payment',
+        'New: Pending Subscriptions Dashboard section',
+        'Fixed: Billing date save issue resolved',
+        'Changed: No more auto-processing of subscription payments',
       ],
       fr: [
-        'Les abonnements nécessitent désormais une confirmation manuelle',
-        'Nouvelle section « Abonnements en attente » sur le tableau de bord',
-        'Confirmez ou ignorez chaque cycle de facturation manuellement',
-        'Correction : la date de facturation est maintenant sauvegardée correctement',
-        'Correction : les abonnements ne se traitent plus automatiquement au démarrage',
+        'Nouveau : Confirmation manuelle des abonnements — vous décidez quand enregistrer un paiement',
+        'Nouveau : Section Abonnements en attente sur le tableau de bord',
+        'Corrigé : Problème de sauvegarde de la date de facturation résolu',
+        'Changé : Plus de traitement automatique des paiements d\'abonnement',
       ],
       arTN: [
-        'الاشتراكات تحتاج الآن لتأكيد يدوي قبل التأثير على ميزانيتك',
-        'قسم جديد "الاشتراكات المستحقة" في لوحة التحكم',
-        'أكّد أو تخطَّ كل دورة فوترة يدوياً',
-        'إصلاح: تاريخ الفوترة يُحفظ بشكل صحيح عند التعديل',
-        'إصلاح: إيقاف المعالجة التلقائية للاشتراكات عند فتح التطبيق',
+        'جديد: تأكيد يدوي للاشتراكات — أنت تقرر متى تسجل الدفع',
+        'جديد: قسم الاشتراكات المعلقة في الصفحة الرئيسية',
+        'تصليح: مشكلة حفظ تاريخ الفاتورة تصلحت',
+        'تغيير: ما عاد فيه معالجة تلقائية لمدفوعات الاشتراك',
       ],
     },
   },
@@ -168,13 +1179,13 @@ export const CHANGELOG = [
     date: '2026-05-01',
     changes: {
       en: [
-        'Improved: Amount fields now use natural left-to-right number entry with currency on the right',
+        'Improved: LTR number entry with currency symbol on the right',
       ],
       fr: [
-        'Amélioré : Les champs montant utilisent maintenant une saisie naturelle gauche-droite avec la devise à droite',
+        'Amélioré : Saisie de nombre LTR avec symbole de devise à droite',
       ],
       arTN: [
-        'حسّنّا: خانات المبلغ ولّات بالكتابة الطبيعية من اليسار لليمين والعملة على اليمين',
+        'تحسين: إدخال الأرقام LTR مع رمز العملة على اليمين',
       ],
     },
   },
@@ -183,16 +1194,16 @@ export const CHANGELOG = [
     date: '2026-05-01',
     changes: {
       en: [
-        'Improved: Dashboard sections now show the current month context',
-        'Fixed: Cursor behavior on amount fields in Arabic mode',
+        'New: Dashboard now shows current month context',
+        'Fixed: Arabic cursor positioning issue resolved',
       ],
       fr: [
-        'Amélioré : Les sections du tableau de bord affichent maintenant le mois en cours',
-        'Corrigé : Correction du curseur dans les champs montant en mode arabe',
+        'Nouveau : Le tableau de bord affiche maintenant le contexte du mois en cours',
+        'Corrigé : Problème de positionnement du curseur arabe résolu',
       ],
       arTN: [
-        'حسّنّا: أقسام لوحة التحكم تبيّن الشهر الحالي توّا',
-        'صلّحنا: تصلّح الكرسور في خانات المبلغ في الوضع العربي',
+        'جديد: الصفحة الرئيسية تعرض الآن سياق الشهر الحالي',
+        'تصليح: مشكلة موضع المؤشر العربي تصلحت',
       ],
     },
   },
@@ -207,9 +1218,9 @@ export const CHANGELOG = [
         'Moved: Factory reset relocated from More to Settings',
         'Changed: Replaced pig icon with target (budgets) and vault (savings)',
         'Added: Dashboard now shows current month context (e.g. "May 2026")',
-        'Polish: Gold border on focused inputs — all 5 forms',
+        'Polish: Gold border on focused inputs , all 5 forms',
         'Polish: DETAILS divider added to transaction form',
-        'Polish: OVERVIEW label inverted — month is now the visual anchor',
+        'Polish: OVERVIEW label inverted , month is now the visual anchor',
       ],
       fr: [
         'Corrigé : Le budget bloque maintenant les doublons de catégorie en mode récurrent',
@@ -218,7 +1229,7 @@ export const CHANGELOG = [
         'Déplacé : Réinitialisation usine déplacée de Plus vers Paramètres',
         'Changé : Icône cochon remplacée par cible (budgets) et coffre (épargne)',
         'Ajouté : Le tableau de bord affiche le mois en cours (ex : « mai 2026 »)',
-        'Polissage : Bordure dorée sur les champs actifs — tous les 5 formulaires',
+        'Polissage : Bordure dorée sur les champs actifs , tous les 5 formulaires',
         'Polissage : Séparateur DÉTAILS ajouté au formulaire de transaction',
         'Polissage : Le mois est maintenant l’ancre visuelle du tableau de bord',
       ],
@@ -285,6 +1296,7 @@ export const CHANGELOG = [
   },
   {
     version: '1.39.26',
+
     date: '2026-04-25',
     changes: {
       en: [
@@ -399,18 +1411,18 @@ export const CHANGELOG = [
     date: '2026-04-21',
     changes: {
       en: [
-        'Fixed: Onboarding blocked on currency selection screen — user identity now created automatically',
+        'Fixed: Onboarding blocked on currency selection screen , user identity now created automatically',
         'Fixed: Welcome step 2 redesigned with Privacy & Offline USP cards',
         'Fixed: Welcome step 3 restored',
       ],
       fr: [
-        'Corrigé : Blocage lors de la sélection de la devise à l\'accueil — l\'identité utilisateur est maintenant créée automatiquement',
+        'Corrigé : Blocage lors de la sélection de la devise à l\'accueil , l\'identité utilisateur est maintenant créée automatiquement',
         'Corrigé : Étape 2 de l\'accueil redessinée avec les cartes Confidentialité & Hors-ligne',
         'Corrigé : Étape 3 de l\'accueil restaurée',
       ],
       arTN: [
-        'صلّحنا: كانت الأبليكاشن تعلق في صفحة اختيار العملة — صلّحنا الأمر، راه يخلق حسابك وحده',
-        'صلّحنا: صفحة الترحيب 2 تغيّرت — صلّحنا الأمر، راه يعلم بالخصوصية والعمل بدون إنترنت',
+        'صلّحنا: كانت الأبليكاشن تعلق في صفحة اختيار العملة , صلّحنا الأمر، راه يخلق حسابك وحده',
+        'صلّحنا: صفحة الترحيب 2 تغيّرت , صلّحنا الأمر، راه يعلم بالخصوصية والعمل بدون إنترنت',
         'صلّحنا: الصفحة 3 من الترحيب رجعت كما كانت',
       ],
     },
@@ -593,7 +1605,7 @@ export const CHANGELOG = [
         'Fixed: All currency defaults now respect your chosen currency (USD safe fallback)',
         'Fixed: Exchange rates retry 3x on failure with exponential backoff',
         'Fixed: Stale rates warning shown when offline cache is >24h old',
-        'Fixed: Transaction time always visible — moved to right column',
+        'Fixed: Transaction time always visible , moved to right column',
         'Improved: Budget calculations are now significantly faster when tracking many categories at once',
         'Improved: Database query performance for smoother scrolling in long transaction lists',
         'UI: Decimal keyboard on amount fields, dark-themed feedback messages, gold account picker',
@@ -604,7 +1616,7 @@ export const CHANGELOG = [
         'Corrigé : Toutes les devises par défaut respectent maintenant votre devise choisie (USD en fallback sécurisé)',
         'Corrigé : Les taux de change réessaient 3 fois en cas d\'échec avec un délai exponentiel',
         'Corrigé : Avertissement affiché quand le cache hors-ligne des taux a plus de 24h',
-        'Corrigé : L\'heure de transaction est toujours visible — déplacée dans la colonne de droite',
+        'Corrigé : L\'heure de transaction est toujours visible , déplacée dans la colonne de droite',
         'Amélioré : Les calculs de budget sont maintenant nettement plus rapides lors du suivi de nombreuses catégories',
         'Amélioré : Performance des requêtes de base de données pour un défilement plus fluide dans les longues listes',
         'Interface : UI : Clavier décimal sur les champs de montant, messages de retour thème sombre, sélecteur de compte doré',
@@ -615,7 +1627,7 @@ export const CHANGELOG = [
         'صلّحنا: كل العملات الافتراضية تحترم الآن عملتك المختارة (USD كـ fallback آمن)',
         'صلّحنا: أسعار الصرف تعيد المحاولة 3 مرات عند الفشل مع تأخير تدريجي',
         'صلّحنا: تحذير يظهر لما الكاش offline للأسعار عمره أكثر من 24 ساعة',
-        'صلّحنا: وقت المعاملة يبان دايمًا — نقلناه للعمود الأيمن',
+        'صلّحنا: وقت المعاملة يبان دايمًا , نقلناه للعمود الأيمن',
         'حسّنّا: حسابات الميزانية ولّت أسرع بكثير لما تتابع تصنيفات كثيرة في نفس الوقت',
         'حسّنّا: أداء استعلامات قاعدة البيانات للتمرير أسلس في القوائم الطويلة',
         'واجهة: لوحة أرقام عشرية على خانات المبلغ، رسائل تغذية راجعة داكنة، منتقي حساب ذهبي',
@@ -654,19 +1666,19 @@ export const CHANGELOG = [
     date: '2026-04-18',
     changes: {
       en: [
-        'Improved: Tunisian Arabic rewritten in authentic Darija — more natural and casual',
+        'Improved: Tunisian Arabic rewritten in authentic Darija , more natural and casual',
         'Improved: Currency names now display in your chosen language',
         'Improved: Currency picker shows all 16 supported currencies',
         'Improved: Currency search now works in your current language',
       ],
       fr: [
-        'Amélioré : L\'arabe tunisien réécrit en Darija authentique — plus naturel et décontracté',
+        'Amélioré : L\'arabe tunisien réécrit en Darija authentique , plus naturel et décontracté',
         'Amélioré : Les noms de devises s\'affichent maintenant dans votre langue choisie',
         'Amélioré : Le sélecteur de devise affiche les 16 devises supportées',
         'Corrigé : La recherche de devise fonctionne maintenant dans votre langue actuelle',
       ],
       arTN: [
-        'حسّنّا: العربية التونسية تبدّلت بدارجة حقيقية — أطبع وأقرب',
+        'حسّنّا: العربية التونسية تبدّلت بدارجة حقيقية , أطبع وأقرب',
         'حسّنّا: أسماء العملات تبان الآن بلغتك المختارة',
         'حسّنّا: منتقي العملة يعرض الـ 16 عملة المدعومة',
         'حسّنّا: البحث عن العملة يخدم الآن بلغتك الحالية',
@@ -807,19 +1819,19 @@ export const CHANGELOG = [
     date: '2026-04-14',
     changes: {
       en: [
-        'Improved: Forgetting your PIN now clearly explains that recovery requires a full app reset — no surprises',
+        'Improved: Forgetting your PIN now clearly explains that recovery requires a full app reset , no surprises',
         'Improved: A Factory Reset option is available if you ever need a completely fresh start',
         'Added: The quick-add button background is now a deep navy for better contrast',
         'Added: Quick-add buttons are larger and easier to tap',
       ],
       fr: [
-        'Amélioré : Oublier votre PIN explique maintenant clairement que la récupération nécessite une réinitialisation complète — sans surprises',
+        'Amélioré : Oublier votre PIN explique maintenant clairement que la récupération nécessite une réinitialisation complète , sans surprises',
         'Ajouté : Une option de réinitialisation d\'usine est disponible si vous avez besoin de repartir de zéro',
         'Amélioré : L\'arrière-plan du bouton d\'ajout rapide est maintenant bleu marine profond pour un meilleur contraste',
         'Amélioré : Les boutons d\'ajout rapide sont plus grands et plus faciles à appuyer',
       ],
       arTN: [
-        'حسّنّا: نسيان الـ PIN يشرح الآن بوضوح أن الاسترجاع يحتاج إعادة ضبط كاملة — بلا مفاجآت',
+        'حسّنّا: نسيان الـ PIN يشرح الآن بوضوح أن الاسترجاع يحتاج إعادة ضبط كاملة , بلا مفاجآت',
         'زدنا: خيار إعادة الضبط الكامل متاح لما تحتاج بداية جديدة من الصفر',
         'حسّنّا: خلفية زر الإضافة السريعة ولّت كحلاء عميقة للتباين أحسن',
         'حسّنّا: أزرار الإضافة السريعة أكبر وأسهل للضغط',
@@ -882,19 +1894,19 @@ export const CHANGELOG = [
     date: '2026-04-12',
     changes: {
       en: [
-        'Fixed: Tunisian Dinar (TND) amounts were being converted incorrectly — this is now resolved',
+        'Fixed: Tunisian Dinar (TND) amounts were being converted incorrectly , this is now resolved',
         'Fixed: Subscription billing dates and amounts now calculate correctly',
         'Fixed: Income totals now add up correctly',
         'Improved: Error messages now appear in your chosen language',
       ],
       fr: [
-        'Corrigé : Les montants en Dinar Tunisien (TND) étaient convertis incorrectement — c\'est maintenant résolu',
+        'Corrigé : Les montants en Dinar Tunisien (TND) étaient convertis incorrectement , c\'est maintenant résolu',
         'Corrigé : Les dates et montants de facturation des abonnements se calculent maintenant correctement',
         'Corrigé : Les totaux de revenus s\'additionnent maintenant correctement',
         'Corrigé : Les messages d\'erreur apparaissent maintenant dans votre langue choisie',
       ],
       arTN: [
-        'صلّحنا: مبالغ الدينار التونسي (TND) كانت تتحوّل غلط — الأمر حُلّ الآن',
+        'صلّحنا: مبالغ الدينار التونسي (TND) كانت تتحوّل غلط , الأمر حُلّ الآن',
         'صلّحنا: تواريخ ومبالغ فواتير الاشتراكات تحسب صح الآن',
         'صلّحنا: إجماليات الدخل تجمع صح الآن',
         'صلّحنا: رسائل الخطأ تبان الآن بلغتك المختارة',
@@ -1462,15 +2474,15 @@ export const CHANGELOG = [
     changes: {
       en: [
         'Improved: Choose your default currency during setup',
-        'Fixed: Tunisian Dinar amounts were being multiplied by 1000 incorrectly — now resolved',
+        'Fixed: Tunisian Dinar amounts were being multiplied by 1000 incorrectly , now resolved',
       ],
       fr: [
         'Ajouté : Choisissez votre devise par défaut lors de la configuration',
-        'Corrigé : Les montants en Dinar Tunisien étaient multipliés par 1000 incorrectement — c\'est maintenant résolu',
+        'Corrigé : Les montants en Dinar Tunisien étaient multipliés par 1000 incorrectement , c\'est maintenant résolu',
       ],
       arTN: [
         'زدنا: اختر عملتك الافتراضية وقت الإعداد',
-        'صلّحنا: مبالغ الدينار التونسي كانت تتضرب في 1000 غلط — الأمر حُلّ الآن',
+        'صلّحنا: مبالغ الدينار التونسي كانت تتضرب في 1000 غلط , الأمر حُلّ الآن',
       ],
     },
   },
