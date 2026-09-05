@@ -11,11 +11,13 @@
   },
   "hero": {
     "title": "Your Personal Finance Companion",
-    "subtitle": "Track expenses, manage budgets, and grow your wealth — all offline, all private.",
+    "subtitle": "Track expenses, manage budgets, and grow your wealth - all offline, all private.",
     "cta": "Download Now",
-    "available": "Available exclusively on Android"
+    "available": "Available exclusively on Android",
+    "get_it_on": "Get it on"
   },
   "features": {
+    "eyebrow": "Everything you need",
     "title": "Everything You Need",
     "subtitle": "Powerful features designed for your financial journey",
     "offline": {
@@ -24,7 +26,7 @@
     },
     "multi_account": {
       "title": "Multi-Account",
-      "desc": "Manage Bank, Cash, Wallet, Savings, and Meal Voucher accounts — all in one place."
+      "desc": "Manage Bank, Cash, Wallet, Savings, and Meal Voucher accounts - all in one place."
     },
     "budgets": {
       "title": "Smart Budgets",
@@ -46,24 +48,18 @@
       "title": "Subscription Tracker",
       "desc": "Track recurring payments, get reminders, and confirm payments manually."
     },
-    "tour": {
-      "title": "Interactive App Tour",
-      "desc": "A guided tour walks you through every feature on first launch — restartable anytime from Help."
-    },
     "transactions": {
       "title": "Advanced Transactions",
       "desc": "Filter, copy, and view transactions in List, Grid, or Calendar mode with daily totals."
     },
     "number_format": {
       "title": "Your Number Format",
-      "desc": "Choose your preferred number format — comma-dot, space-comma, or auto — with live preview."
+      "desc": "Choose your preferred number format - comma-dot, space-comma, or auto - with live preview."
     }
   },
-  "stats_bar": {
-    "offline": "100% Offline",
-    "currencies": "10+ Currencies",
-    "data": "0 Data Shared",
-    "free": "Free"
+  "cta": {
+    "title": "Ready to take control of your finances?",
+    "subtitle": "Join users managing their money offline, privately, and securely."
   },
   "footer": {
     "tagline": "Your treasure, your rules.",
@@ -79,26 +75,26 @@
     "last_updated": "Last updated: September 2026",
     "intro": {
       "title": "Introduction",
-      "content": "Khazinti (\"خزينتي\") is a personal finance application designed with privacy as a core principle. This policy explains what data is collected, how it is stored, and your rights as a user."
+      "content": "Khazinti is a personal finance application designed with privacy as a core principle. This policy explains what data is collected, how it is stored, and your rights as a user."
     },
     "data_collection": {
       "title": "Data We Collect",
       "content": "Khazinti collects only the minimum data necessary to operate. All financial data you enter is stored exclusively on your device and never transmitted to our servers.",
       "items": [
-        "Financial data you enter (accounts, transactions, budgets, subscriptions) — stored locally on your device only",
-        "App preferences (language, theme, number format, notification settings) — stored locally on your device",
-        "PIN hash and biometric credentials — stored in your device's secure storage (expo-secure-store), never transmitted",
-        "Anonymous advertising identifiers — used by Google AdMob to serve ads (can be reset in your device settings)",
-        "GDPR consent status — stored locally to respect your advertising preferences"
+        "Financial data you enter (accounts, transactions, budgets, subscriptions) - stored locally on your device only",
+        "App preferences (language, theme, number format, notification settings) - stored locally on your device",
+        "PIN hash and biometric credentials - stored in your device's secure storage (expo-secure-store), never transmitted",
+        "Anonymous advertising identifiers - used by Google AdMob to serve ads (can be reset in your device settings)",
+        "GDPR consent status - stored locally to respect your advertising preferences"
       ]
     },
     "data_storage": {
       "title": "How We Store Your Data",
       "content": "Your financial data is stored entirely on your device using the following mechanisms:",
       "items": [
-        "SQLite database (expo-sqlite) — all financial records (accounts, transactions, budgets, subscriptions, categories)",
-        "AsyncStorage — simple app flags (e.g., whether you have seen the welcome screen)",
-        "SecureStore (expo-secure-store) — sensitive credentials such as your PIN hash and user identifier",
+        "SQLite database (expo-sqlite) - all financial records (accounts, transactions, budgets, subscriptions, categories)",
+        "AsyncStorage - simple app flags (e.g., whether you have seen the welcome screen)",
+        "SecureStore (expo-secure-store) - sensitive credentials such as your PIN hash and user identifier",
         "No cloud sync, no remote database, no third-party storage of your financial data"
       ]
     },
@@ -106,21 +102,21 @@
       "title": "Third-Party Services",
       "content": "Khazinti uses a small number of third-party services for specific functions:",
       "items": [
-        "Google AdMob — displays interstitial ads to free users; Premium users see no ads. AdMob may collect advertising identifiers per Google's privacy policy.",
-        "Google UMP (User Messaging Platform) — manages GDPR consent for advertising in the EU/EEA",
-        "Frankfurter API — provides live currency exchange rates (no personal data sent, only a currency code request)",
-        "Open Exchange Rates API — fallback currency rate provider (no personal data sent)"
+        "Google AdMob - displays interstitial ads to free users; Premium users see no ads. AdMob may collect advertising identifiers per Google's privacy policy.",
+        "Google UMP (User Messaging Platform) - manages GDPR consent for advertising in the EU/EEA",
+        "Frankfurter API - provides live currency exchange rates (no personal data sent, only a currency code request)",
+        "Open Exchange Rates API - fallback currency rate provider (no personal data sent)"
       ]
     },
     "notifications": {
       "title": "Notifications",
       "content": "Khazinti can send local notifications for the following purposes (all optional, configurable in Settings):",
       "items": [
-        "Budget alerts — when your spending reaches 50%, 75%, 90%, or 100% of a budget limit",
-        "Subscription payment reminders — before a subscription renewal date",
-        "Large transaction alerts — when a transaction exceeds a threshold you set",
-        "Low balance alerts — when an account balance falls below a threshold you set",
-        "Daily spending summary — a daily recap of your income and expenses"
+        "Budget alerts - when your spending reaches 50%, 75%, 90%, or 100% of a budget limit",
+        "Subscription payment reminders - before a subscription renewal date",
+        "Large transaction alerts - when a transaction exceeds a threshold you set",
+        "Low balance alerts - when an account balance falls below a threshold you set",
+        "Daily spending summary - a daily recap of your income and expenses"
       ]
     },
     "user_rights": {

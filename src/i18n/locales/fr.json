@@ -11,11 +11,13 @@
   },
   "hero": {
     "title": "Votre Compagnon Financier Personnel",
-    "subtitle": "Suivez vos dépenses, gérez vos budgets et faites croître votre patrimoine — tout hors-ligne, tout privé.",
+    "subtitle": "Suivez vos dépenses, gérez vos budgets et faites croître votre patrimoine - tout hors-ligne, tout privé.",
     "cta": "Télécharger",
-    "available": "Disponible uniquement sur Android"
+    "available": "Disponible uniquement sur Android",
+    "get_it_on": "Disponible sur"
   },
   "features": {
+    "eyebrow": "Tout ce dont vous avez besoin",
     "title": "Tout Ce Dont Vous Avez Besoin",
     "subtitle": "Des fonctionnalités puissantes conçues pour votre parcours financier",
     "offline": {
@@ -24,7 +26,7 @@
     },
     "multi_account": {
       "title": "Multi-Comptes",
-      "desc": "Gérez Banque, Espèces, Portefeuille, Épargne et Ticket Restaurant — tout en un seul endroit."
+      "desc": "Gérez Banque, Espèces, Portefeuille, Épargne et Ticket Restaurant - tout en un seul endroit."
     },
     "budgets": {
       "title": "Budgets Intelligents",
@@ -44,11 +46,7 @@
     },
     "subscriptions": {
       "title": "Suivi d'Abonnements",
-      "desc": "Suivez vos paiements récurrents, recevez des rappels et confirmez les paiements manuellement."
-    },
-    "tour": {
-      "title": "Tour Interactif",
-      "desc": "Un tour guidé vous présente chaque fonctionnalité au premier lancement — redémarrable depuis l'Aide."
+      "desc": "Suivez vos paiements recurrents, recevez des rappels et confirmez les paiements manuellement."
     },
     "transactions": {
       "title": "Transactions Avancées",
@@ -56,14 +54,12 @@
     },
     "number_format": {
       "title": "Votre Format de Nombre",
-      "desc": "Choisissez votre format préféré — virgule-point, espace-virgule, ou auto — avec aperçu en direct."
+      "desc": "Choisissez votre format préféré - virgule-point, espace-virgule, ou auto - avec aperçu en direct."
     }
   },
-  "stats_bar": {
-    "offline": "100% Hors-ligne",
-    "currencies": "10+ Devises",
-    "data": "0 Donnée Partagée",
-    "free": "Gratuit"
+  "cta": {
+    "title": "Pret a prendre le controle de vos finances ?",
+    "subtitle": "Rejoignez les utilisateurs qui gerent leur argent hors-ligne, en prive et en securite."
   },
   "footer": {
     "tagline": "Votre trésor, vos règles.",
@@ -85,20 +81,20 @@
       "title": "Données Collectées",
       "content": "Khazinti collecte uniquement les données minimales nécessaires au fonctionnement. Toutes les données financières que vous saisissez sont stockées exclusivement sur votre appareil et ne sont jamais transmises à nos serveurs.",
       "items": [
-        "Données financières saisies (comptes, transactions, budgets, abonnements) — stockées localement sur votre appareil uniquement",
-        "Préférences de l'application (langue, thème, format de nombre, paramètres de notification) — stockées localement",
-        "Hash PIN et identifiants biométriques — stockés dans le stockage sécurisé de votre appareil (expo-secure-store), jamais transmis",
-        "Identifiants publicitaires anonymes — utilisés par Google AdMob pour diffuser des publicités (réinitialisables dans les paramètres de votre appareil)",
-        "Statut de consentement GDPR — stocké localement pour respecter vos préférences publicitaires"
+        "Données financières saisies (comptes, transactions, budgets, abonnements) - stockées localement sur votre appareil uniquement",
+        "Préférences de l'application (langue, thème, format de nombre, paramètres de notification) - stockées localement",
+        "Hash PIN et identifiants biométriques - stockés dans le stockage sécurisé de votre appareil (expo-secure-store), jamais transmis",
+        "Identifiants publicitaires anonymes - utilisés par Google AdMob pour diffuser des publicités (réinitialisables dans les paramètres de votre appareil)",
+        "Statut de consentement GDPR - stocké localement pour respecter vos préférences publicitaires"
       ]
     },
     "data_storage": {
       "title": "Stockage des Données",
       "content": "Vos données financières sont stockées entièrement sur votre appareil via les mécanismes suivants :",
       "items": [
-        "Base de données SQLite (expo-sqlite) — tous les enregistrements financiers (comptes, transactions, budgets, abonnements, catégories)",
-        "AsyncStorage — indicateurs simples de l'application (ex. : si vous avez vu l'écran de bienvenue)",
-        "SecureStore (expo-secure-store) — identifiants sensibles tels que votre hash PIN et identifiant utilisateur",
+        "Base de données SQLite (expo-sqlite) - tous les enregistrements financiers (comptes, transactions, budgets, abonnements, catégories)",
+        "AsyncStorage - indicateurs simples de l'application (ex. : si vous avez vu l'écran de bienvenue)",
+        "SecureStore (expo-secure-store) - identifiants sensibles tels que votre hash PIN et identifiant utilisateur",
         "Aucune synchronisation cloud, aucune base de données distante, aucun stockage tiers de vos données financières"
       ]
     },
@@ -106,21 +102,21 @@
       "title": "Services Tiers",
       "content": "Khazinti utilise un petit nombre de services tiers pour des fonctions spécifiques :",
       "items": [
-        "Google AdMob — affiche des publicités interstitielles aux utilisateurs gratuits ; les utilisateurs Premium ne voient aucune publicité. AdMob peut collecter des identifiants publicitaires selon la politique de confidentialité de Google.",
-        "Google UMP (User Messaging Platform) — gère le consentement GDPR pour la publicité dans l'UE/EEE",
-        "Frankfurter API — fournit des taux de change en direct (aucune donnée personnelle envoyée, seulement une demande de code de devise)",
-        "Open Exchange Rates API — fournisseur de taux de change de secours (aucune donnée personnelle envoyée)"
+        "Google AdMob - affiche des publicités interstitielles aux utilisateurs gratuits ; les utilisateurs Premium ne voient aucune publicité. AdMob peut collecter des identifiants publicitaires selon la politique de confidentialité de Google.",
+        "Google UMP (User Messaging Platform) - gère le consentement GDPR pour la publicité dans l'UE/EEE",
+        "Frankfurter API - fournit des taux de change en direct (aucune donnée personnelle envoyée, seulement une demande de code de devise)",
+        "Open Exchange Rates API - fournisseur de taux de change de secours (aucune donnée personnelle envoyée)"
       ]
     },
     "notifications": {
       "title": "Notifications",
       "content": "Khazinti peut envoyer des notifications locales pour les raisons suivantes (toutes optionnelles, configurables dans Paramètres) :",
       "items": [
-        "Alertes de budget — quand vos dépenses atteignent 50%, 75%, 90% ou 100% d'une limite de budget",
-        "Rappels de paiement d'abonnement — avant une date de renouvellement d'abonnement",
-        "Alertes de grande transaction — quand une transaction dépasse un seuil que vous définissez",
-        "Alertes de solde bas — quand le solde d'un compte tombe en dessous d'un seuil que vous définissez",
-        "Résumé quotidien des dépenses — un récapitulatif quotidien de vos revenus et dépenses"
+        "Alertes de budget - quand vos dépenses atteignent 50%, 75%, 90% ou 100% d'une limite de budget",
+        "Rappels de paiement d'abonnement - avant une date de renouvellement d'abonnement",
+        "Alertes de grande transaction - quand une transaction dépasse un seuil que vous définissez",
+        "Alertes de solde bas - quand le solde d'un compte tombe en dessous d'un seuil que vous définissez",
+        "Résumé quotidien des dépenses - un récapitulatif quotidien de vos revenus et dépenses"
       ]
     },
     "user_rights": {
