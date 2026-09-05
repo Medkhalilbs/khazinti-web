@@ -17,7 +17,7 @@
 
         <div class="hero-actions">
           <a
-            href="https://play.google.com/store/apps/details?id=com.medkhalilbs.khazinti"
+            href="https://play.google.com/store/apps/details?id=com.khazinti.app"
             target="_blank"
             rel="noopener noreferrer"
             class="store-btn"
@@ -384,7 +384,7 @@
         <h2>{{ t('cta.title') }}</h2>
         <p>{{ t('cta.subtitle') }}</p>
         <a
-          href="https://play.google.com/store/apps/details?id=com.medkhalilbs.khazinti"
+          href="https://play.google.com/store/apps/details?id=com.khazinti.app"
           target="_blank"
           rel="noopener noreferrer"
           class="store-btn store-btn--large"
