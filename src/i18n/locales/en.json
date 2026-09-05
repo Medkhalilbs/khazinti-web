@@ -11,7 +11,7 @@
   },
   "hero": {
     "title": "Your Personal Finance Companion",
-    "subtitle": "Track expenses, manage budgets, and grow your wealth \u2014 all offline, all private.",
+    "subtitle": "Track expenses, manage budgets, and grow your wealth — all offline, all private.",
     "cta": "Download Now",
     "available": "Available exclusively on Android"
   },
@@ -24,15 +24,15 @@
     },
     "multi_account": {
       "title": "Multi-Account",
-      "desc": "Manage wallets, bank accounts, and savings in one place."
+      "desc": "Manage Bank, Cash, Wallet, Savings, and Meal Voucher accounts — all in one place."
     },
     "budgets": {
       "title": "Smart Budgets",
-      "desc": "Set budgets by category and track your spending in real-time."
+      "desc": "Set budgets by category and track your spending in real-time with smart alerts."
     },
     "multi_currency": {
       "title": "Multi-Currency",
-      "desc": "Support for TND, EUR, USD and 10+ currencies with live rates."
+      "desc": "Support for TND, EUR, USD and 10+ currencies with live exchange rates."
     },
     "stats": {
       "title": "Visual Insights",
@@ -41,7 +41,29 @@
     "secure": {
       "title": "Bank-Level Security",
       "desc": "PIN code and biometric authentication protect your financial data."
+    },
+    "subscriptions": {
+      "title": "Subscription Tracker",
+      "desc": "Track recurring payments, get reminders, and confirm payments manually."
+    },
+    "tour": {
+      "title": "Interactive App Tour",
+      "desc": "A guided tour walks you through every feature on first launch — restartable anytime from Help."
+    },
+    "transactions": {
+      "title": "Advanced Transactions",
+      "desc": "Filter, copy, and view transactions in List, Grid, or Calendar mode with daily totals."
+    },
+    "number_format": {
+      "title": "Your Number Format",
+      "desc": "Choose your preferred number format — comma-dot, space-comma, or auto — with live preview."
     }
+  },
+  "stats_bar": {
+    "offline": "100% Offline",
+    "currencies": "10+ Currencies",
+    "data": "0 Data Shared",
+    "free": "Free"
   },
   "footer": {
     "tagline": "Your treasure, your rules.",
@@ -54,63 +76,76 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "last_updated": "Last updated: May 2026",
+    "last_updated": "Last updated: September 2026",
     "intro": {
       "title": "Introduction",
-      "content": "Khazinti (\"\u062e\u0632\u064a\u0646\u062a\u064a\") is a personal finance management mobile application. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we handle your data when you use our application."
+      "content": "Khazinti (\"خزينتي\") is a personal finance application designed with privacy as a core principle. This policy explains what data is collected, how it is stored, and your rights as a user."
     },
     "data_collection": {
       "title": "Data We Collect",
-      "content": "Khazinti is designed with a privacy-first, offline-first architecture. Here's what you should know:",
+      "content": "Khazinti collects only the minimum data necessary to operate. All financial data you enter is stored exclusively on your device and never transmitted to our servers.",
       "items": [
-        "Financial Data: All your financial data (accounts, transactions, budgets, categories) is stored exclusively on your device using local SQLite database.",
-        "No Server Storage: We do not collect, transmit, or store any of your financial data on external servers.",
-        "No Account Required: You do not need to create an account or provide personal information to use Khazinti.",
-        "Currency Rates: When you use multi-currency features, the app fetches exchange rates from third-party APIs (Frankfurter API). Only the currency pair is sent \u2014 no personal data.",
-        "No Analytics: We do not use any analytics or tracking services within the app."
+        "Financial data you enter (accounts, transactions, budgets, subscriptions) — stored locally on your device only",
+        "App preferences (language, theme, number format, notification settings) — stored locally on your device",
+        "PIN hash and biometric credentials — stored in your device's secure storage (expo-secure-store), never transmitted",
+        "Anonymous advertising identifiers — used by Google AdMob to serve ads (can be reset in your device settings)",
+        "GDPR consent status — stored locally to respect your advertising preferences"
       ]
     },
     "data_storage": {
-      "title": "Data Storage & Security",
-      "content": "Your data security is our top priority:",
+      "title": "How We Store Your Data",
+      "content": "Your financial data is stored entirely on your device using the following mechanisms:",
       "items": [
-        "All data is stored locally on your device in an encrypted SQLite database.",
-        "Access to the app is protected by PIN code and/or biometric authentication (fingerprint, face recognition).",
-        "No data is transmitted to our servers or any third party (except currency rate requests as described above).",
-        "If you uninstall the app, all data is permanently deleted from your device."
+        "SQLite database (expo-sqlite) — all financial records (accounts, transactions, budgets, subscriptions, categories)",
+        "AsyncStorage — simple app flags (e.g., whether you have seen the welcome screen)",
+        "SecureStore (expo-secure-store) — sensitive credentials such as your PIN hash and user identifier",
+        "No cloud sync, no remote database, no third-party storage of your financial data"
       ]
     },
     "third_party": {
       "title": "Third-Party Services",
-      "content": "Khazinti uses minimal third-party services:",
+      "content": "Khazinti uses a small number of third-party services for specific functions:",
       "items": [
-        "Exchange Rate APIs: Frankfurter API and Open Exchange Rates API are used solely to fetch current currency exchange rates. Only currency codes are transmitted \u2014 no personal or financial data.",
-        "App Store / Play Store: Distribution through Apple App Store and Google Play Store is subject to their respective privacy policies.",
-        "No advertising networks, no social media SDKs, and no analytics platforms are integrated into the app."
+        "Google AdMob — displays interstitial ads to free users; Premium users see no ads. AdMob may collect advertising identifiers per Google's privacy policy.",
+        "Google UMP (User Messaging Platform) — manages GDPR consent for advertising in the EU/EEA",
+        "Frankfurter API — provides live currency exchange rates (no personal data sent, only a currency code request)",
+        "Open Exchange Rates API — fallback currency rate provider (no personal data sent)"
+      ]
+    },
+    "notifications": {
+      "title": "Notifications",
+      "content": "Khazinti can send local notifications for the following purposes (all optional, configurable in Settings):",
+      "items": [
+        "Budget alerts — when your spending reaches 50%, 75%, 90%, or 100% of a budget limit",
+        "Subscription payment reminders — before a subscription renewal date",
+        "Large transaction alerts — when a transaction exceeds a threshold you set",
+        "Low balance alerts — when an account balance falls below a threshold you set",
+        "Daily spending summary — a daily recap of your income and expenses"
       ]
     },
     "user_rights": {
       "title": "Your Rights",
-      "content": "Since all your data is stored locally on your device, you have complete control:",
+      "content": "Since all your data is stored locally on your device, you have full control:",
       "items": [
-        "Access: You can view all your data directly within the app at any time.",
-        "Deletion: You can delete any or all data from within the app, or by uninstalling the application.",
-        "Export: You can export your data in standard formats for your own records.",
-        "Portability: Your data belongs to you. We never have access to it."
+        "Access: all your data is visible directly in the app",
+        "Delete: use the Factory Reset option in Settings to permanently erase all app data",
+        "Export: use the Backup & Restore feature to export your data",
+        "Advertising: reset your advertising ID in your device settings, or opt out via the GDPR consent form",
+        "Notifications: disable any or all notification types in the app's Notification Settings"
       ]
     },
     "children": {
       "title": "Children's Privacy",
-      "content": "Khazinti is not directed at children under 13 years of age. We do not knowingly collect personal information from children. Since the app operates entirely offline with no data collection, there is no mechanism through which children's data could be collected."
+      "content": "Khazinti is not directed at children under 13. We do not knowingly collect personal information from children."
     },
     "changes": {
       "title": "Changes to This Policy",
-      "content": "We may update this Privacy Policy from time to time. Any changes will be reflected in the \"Last updated\" date at the top of this page. We encourage you to review this policy periodically."
+      "content": "We may update this Privacy Policy from time to time. Changes will be reflected in the app's changelog and on this page with an updated date."
     },
     "contact": {
       "title": "Contact Us",
-      "content": "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:",
-      "email": "support.khazinti{'@'}gmail.com"
+      "content": "If you have any questions about this Privacy Policy, please contact us at:",
+      "email": "support.khazinti@gmail.com"
     }
   }
 }

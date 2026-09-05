@@ -46,6 +46,17 @@
         </ul>
       </section>
 
+      <!-- Notifications -->
+      <section class="policy-section">
+        <h2>{{ t('privacy.notifications.title') }}</h2>
+        <p>{{ t('privacy.notifications.content') }}</p>
+        <ul>
+          <li v-for="(item, index) in tm('privacy.notifications.items')" :key="index">
+            {{ rt(item) }}
+          </li>
+        </ul>
+      </section>
+
       <!-- User Rights -->
       <section class="policy-section">
         <h2>{{ t('privacy.user_rights.title') }}</h2>
@@ -97,114 +108,95 @@ const { t, tm, rt } = useI18n()
 .privacy-header {
   text-align: center;
   padding: 4rem 2rem 3rem;
-  background: linear-gradient(180deg, var(--bg-gradient-1) 0%, transparent 100%);
-  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(180deg, var(--bg-gradient-start, rgba(10,14,26,0.8)) 0%, transparent 100%);
 }
 
 .privacy-header h1 {
-  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
-  font-size: 2.5rem;
-  color: var(--text-primary);
-  margin: 0 0 0.75rem;
+  color: var(--text-primary, #F5F0E8);
+  margin-bottom: 0.5rem;
 }
 
 .last-updated {
-  font-family: 'Inter', sans-serif;
+  color: var(--text-muted, #8B8B9A);
   font-size: 0.9rem;
-  color: var(--text-muted);
-  margin: 0 0 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .privacy-lang {
-  display: inline-flex;
+  margin-top: 1rem;
 }
 
 .privacy-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 3rem 2rem 6rem;
+  padding: 2rem;
 }
 
 .policy-section {
   margin-bottom: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid var(--border-card);
-}
-
-.policy-section:last-child {
-  border-bottom: none;
+  padding: 2rem;
+  background: var(--card-bg, rgba(255,255,255,0.03));
+  border: 1px solid var(--border-color, rgba(255,255,255,0.08));
+  border-radius: 16px;
 }
 
 .policy-section h2 {
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
   font-weight: 600;
-  font-size: 1.4rem;
-  color: #C9A962;
-  margin: 0 0 1rem;
+  color: var(--accent-gold, #C9A962);
+  margin-bottom: 1rem;
 }
 
 .policy-section p {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: var(--text-secondary);
-  margin: 0 0 1rem;
+  color: var(--text-secondary, #B8B8C8);
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
 .policy-section ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0;
+  margin: 0;
 }
 
-.policy-section li {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+.policy-section ul li {
+  color: var(--text-secondary, #B8B8C8);
   line-height: 1.7;
-  color: var(--text-secondary);
-  padding: 0.75rem 0 0.75rem 1.5rem;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
   position: relative;
-  border-bottom: 1px solid var(--border-card);
 }
 
-.policy-section li::before {
-  content: '';
+.policy-section ul li::before {
+  content: "•";
+  color: var(--accent-gold, #C9A962);
   position: absolute;
   left: 0;
-  top: 1.1rem;
-  width: 6px;
-  height: 6px;
-  background: #C9A962;
-  border-radius: 50%;
 }
 
 .contact-email {
   display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--primary);
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  background: var(--border-color);
-  border: 1px solid var(--border-strong);
-  border-radius: 12px;
   margin-top: 0.5rem;
-  transition: background 0.2s, transform 0.2s;
+  color: var(--accent-gold, #C9A962);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
 }
 
 .contact-email:hover {
-  background: rgba(201, 169, 98, 0.2);
-  transform: translateY(-2px);
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  .privacy-header h1 {
-    font-size: 1.75rem;
-  }
   .privacy-content {
-    padding: 2rem 1.5rem 4rem;
+    padding: 1rem;
+  }
+  
+  .policy-section {
+    padding: 1.5rem;
   }
 }
 </style>
