@@ -243,7 +243,7 @@
       </div>
 
       <div class="bento-grid">
-        <!-- Offline — large -->
+        <!-- Offline - large -->
         <div class="bento-card bento-large reveal">
           <div class="bento-icon">📵</div>
           <h3>{{ t('features.offline.title') }}</h3>
@@ -317,7 +317,7 @@
           </div>
         </div>
 
-        <!-- Stats — large -->
+        <!-- Stats - large -->
         <div class="bento-card bento-large reveal">
           <div class="bento-icon">📈</div>
           <h3>{{ t('features.stats.title') }}</h3>
@@ -371,7 +371,7 @@
           <div class="format-preview">
             <span class="format-example active">1,234.56</span>
             <span class="format-example">1 234,56</span>
-            <span class="format-example">١٬٢٣٤٫٥٦</span>
+            <span class="format-example">1.234,56</span>
           </div>
         </div>
       </div>

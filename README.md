@@ -1,6 +1,6 @@
 <div align="center">
   <img src="public/favicon.ico" width="80" alt="Khazinti Logo">
-  <h1>Khazinti Web — خزينتي</h1>
+  <h1>Khazinti Web - خزينتي</h1>
   <p><strong>Official landing page and documentation platform for the Khazinti personal finance app.</strong></p>
   
   <p>

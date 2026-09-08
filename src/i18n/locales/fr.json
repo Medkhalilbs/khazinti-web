@@ -2,64 +2,65 @@
   "nav": {
     "home": "Accueil",
     "privacy": "Politique de confidentialité",
-    "changelog": "Nouveautés",
-    "download": "Télécharger"
+    "changelog": "Journal des modifications",
+    "download": "Télécharger",
+    "support": "Support"
   },
   "changelog": {
-    "title": "Nouveautés",
-    "subtitle": "Découvrez les dernières mises à jour, améliorations et corrections dans Khazinti."
+    "title": "Journal des modifications",
+    "subtitle": "Découvrez les dernières mises à jour, améliorations et corrections de Khazinti."
   },
   "hero": {
-    "title": "Votre Compagnon Financier Personnel",
-    "subtitle": "Suivez vos dépenses, gérez vos budgets et faites croître votre patrimoine - tout hors-ligne, tout privé.",
-    "cta": "Télécharger",
-    "available": "Disponible uniquement sur Android",
+    "title": "Votre compagnon financier personnel",
+    "subtitle": "Suivez vos dépenses, gérez vos budgets et développez votre patrimoine - tout hors ligne, tout privé.",
+    "cta": "Télécharger maintenant",
+    "available": "Disponible exclusivement sur Android",
     "get_it_on": "Disponible sur"
   },
   "features": {
     "eyebrow": "Tout ce dont vous avez besoin",
-    "title": "Tout Ce Dont Vous Avez Besoin",
+    "title": "Tout ce dont vous avez besoin",
     "subtitle": "Des fonctionnalités puissantes conçues pour votre parcours financier",
     "offline": {
-      "title": "100% Hors-ligne",
-      "desc": "Vos données restent sur votre appareil. Aucun serveur, aucun suivi, confidentialité totale."
+      "title": "100% Hors ligne",
+      "desc": "Vos données restent sur votre appareil. Pas de serveurs, pas de suivi, confidentialité totale."
     },
     "multi_account": {
-      "title": "Multi-Comptes",
-      "desc": "Gérez Banque, Espèces, Portefeuille, Épargne et Ticket Restaurant - tout en un seul endroit."
+      "title": "Multi-comptes",
+      "desc": "Gérez des comptes Banque, Espèces, Portefeuille, Épargne et Ticket Restaurant - tout en un seul endroit."
     },
     "budgets": {
-      "title": "Budgets Intelligents",
+      "title": "Budgets intelligents",
       "desc": "Définissez des budgets par catégorie et suivez vos dépenses en temps réel avec des alertes intelligentes."
     },
     "multi_currency": {
-      "title": "Multi-Devises",
-      "desc": "Support pour TND, EUR, USD et plus de 10 devises avec taux de change en direct."
+      "title": "Multi-devises",
+      "desc": "Support pour TND, EUR, USD et plus de 10 devises avec des taux de change en direct."
     },
     "stats": {
-      "title": "Analyses Visuelles",
+      "title": "Aperçus visuels",
       "desc": "De beaux graphiques et analyses pour comprendre vos habitudes de dépenses."
     },
     "secure": {
-      "title": "Sécurité Bancaire",
-      "desc": "Code PIN et authentification biométrique protègent vos données financières."
+      "title": "Sécurité bancaire",
+      "desc": "Le code PIN et l'authentification biométrique protègent vos données financières."
     },
     "subscriptions": {
-      "title": "Suivi d'Abonnements",
-      "desc": "Suivez vos paiements recurrents, recevez des rappels et confirmez les paiements manuellement."
+      "title": "Suivi des abonnements",
+      "desc": "Suivez les paiements récurrents, recevez des rappels et confirmez les paiements manuellement."
     },
     "transactions": {
-      "title": "Transactions Avancées",
-      "desc": "Filtrez, copiez et visualisez les transactions en mode Liste, Grille ou Calendrier avec totaux quotidiens."
+      "title": "Transactions avancées",
+      "desc": "Filtrez, copiez et visualisez les transactions en mode Liste, Grille ou Calendrier avec les totaux journaliers."
     },
     "number_format": {
-      "title": "Votre Format de Nombre",
-      "desc": "Choisissez votre format préféré - virgule-point, espace-virgule, ou auto - avec aperçu en direct."
+      "title": "Votre format de nombre",
+      "desc": "Choisissez votre format de nombre préféré - virgule-point, espace-virgule ou auto - avec aperçu en direct."
     }
   },
   "cta": {
-    "title": "Pret a prendre le controle de vos finances ?",
-    "subtitle": "Rejoignez les utilisateurs qui gerent leur argent hors-ligne, en prive et en securite."
+    "title": "Prêt à prendre le contrôle de vos finances ?",
+    "subtitle": "Rejoignez les utilisateurs qui gèrent leur argent hors ligne, en toute confidentialité et sécurité."
   },
   "footer": {
     "tagline": "Votre trésor, vos règles.",
@@ -68,80 +69,124 @@
     "contact": "Contact",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "support": "Support",
+    "discord": "Communauté Discord"
   },
   "privacy": {
-    "title": "Politique de Confidentialité",
-    "last_updated": "Dernière mise à jour : Septembre 2026",
+    "title": "Politique de confidentialité",
+    "last_updated": "Dernière mise à jour : septembre 2026",
     "intro": {
       "title": "Introduction",
-      "content": "Khazinti (\"خزينتي\") est une application de finances personnelles conçue avec la confidentialité comme principe fondamental. Cette politique explique quelles données sont collectées, comment elles sont stockées et vos droits en tant qu'utilisateur."
+      "content": "Khazinti est une application de finances personnelles conçue avec la confidentialité comme principe fondamental. Cette politique explique quelles données sont collectées, comment elles sont stockées et vos droits en tant qu'utilisateur."
     },
     "data_collection": {
-      "title": "Données Collectées",
-      "content": "Khazinti collecte uniquement les données minimales nécessaires au fonctionnement. Toutes les données financières que vous saisissez sont stockées exclusivement sur votre appareil et ne sont jamais transmises à nos serveurs.",
+      "title": "Données que nous collectons",
+      "content": "Khazinti collecte uniquement le minimum de données nécessaires au fonctionnement. Toutes les données financières que vous saisissez sont stockées exclusivement sur votre appareil et ne sont jamais transmises à nos serveurs.",
       "items": [
-        "Données financières saisies (comptes, transactions, budgets, abonnements) - stockées localement sur votre appareil uniquement",
-        "Préférences de l'application (langue, thème, format de nombre, paramètres de notification) - stockées localement",
-        "Hash PIN et identifiants biométriques - stockés dans le stockage sécurisé de votre appareil (expo-secure-store), jamais transmis",
-        "Identifiants publicitaires anonymes - utilisés par Google AdMob pour diffuser des publicités (réinitialisables dans les paramètres de votre appareil)",
-        "Statut de consentement GDPR - stocké localement pour respecter vos préférences publicitaires"
+        "Données financières que vous saisissez (comptes, transactions, budgets, abonnements) - stockées localement sur votre appareil uniquement",
+        "Préférences de l'application (langue, thème, format des nombres, paramètres de notification) - stockées localement",
+        "Hachage du PIN et identifiants biométriques - stockés dans le stockage sécurisé de votre appareil (expo-secure-store), jamais transmis",
+        "Identifiants publicitaires anonymes - utilisés par Google AdMob pour diffuser des annonces (peuvent être réinitialisés dans les paramètres de votre appareil)",
+        "Statut de consentement RGPD - stocké localement pour respecter vos préférences publicitaires"
       ]
     },
     "data_storage": {
-      "title": "Stockage des Données",
-      "content": "Vos données financières sont stockées entièrement sur votre appareil via les mécanismes suivants :",
+      "title": "Comment nous stockons vos données",
+      "content": "Vos données financières sont stockées entièrement sur votre appareil en utilisant les mécanismes suivants :",
       "items": [
         "Base de données SQLite (expo-sqlite) - tous les enregistrements financiers (comptes, transactions, budgets, abonnements, catégories)",
         "AsyncStorage - indicateurs simples de l'application (ex. : si vous avez vu l'écran de bienvenue)",
-        "SecureStore (expo-secure-store) - identifiants sensibles tels que votre hash PIN et identifiant utilisateur",
-        "Aucune synchronisation cloud, aucune base de données distante, aucun stockage tiers de vos données financières"
+        "SecureStore (expo-secure-store) - identifiants sensibles tels que le hachage de votre PIN et l'identifiant utilisateur",
+        "Pas de synchronisation cloud, pas de base de données distante, pas de stockage tiers de vos données financières"
       ]
     },
     "third_party": {
-      "title": "Services Tiers",
+      "title": "Services tiers",
       "content": "Khazinti utilise un petit nombre de services tiers pour des fonctions spécifiques :",
       "items": [
-        "Google AdMob - affiche des publicités interstitielles aux utilisateurs gratuits ; les utilisateurs Premium ne voient aucune publicité. AdMob peut collecter des identifiants publicitaires selon la politique de confidentialité de Google.",
-        "Google UMP (User Messaging Platform) - gère le consentement GDPR pour la publicité dans l'UE/EEE",
-        "Frankfurter API - fournit des taux de change en direct (aucune donnée personnelle envoyée, seulement une demande de code de devise)",
-        "Open Exchange Rates API - fournisseur de taux de change de secours (aucune donnée personnelle envoyée)"
+        "Google AdMob - affiche des publicités interstitielles aux utilisateurs gratuits ; les utilisateurs Premium ne voient pas de publicités. AdMob peut collecter des identifiants publicitaires conformément à la politique de confidentialité de Google.",
+        "Google UMP (plateforme de messagerie utilisateur) - gère le consentement RGPD pour la publicité dans l'UE/EEE",
+        "API Frankfurter - fournit des taux de change en direct (aucune donnée personnelle envoyée, seulement une requête de code de devise)",
+        "API Open Exchange Rates - fournisseur de taux de change de secours (aucune donnée personnelle envoyée)"
       ]
     },
     "notifications": {
       "title": "Notifications",
-      "content": "Khazinti peut envoyer des notifications locales pour les raisons suivantes (toutes optionnelles, configurables dans Paramètres) :",
+      "content": "Khazinti peut envoyer des notifications locales aux fins suivantes (toutes optionnelles, configurables dans les Paramètres) :",
       "items": [
-        "Alertes de budget - quand vos dépenses atteignent 50%, 75%, 90% ou 100% d'une limite de budget",
+        "Alertes de budget - lorsque vos dépenses atteignent 50 %, 75 %, 90 % ou 100 % d'une limite budgétaire",
         "Rappels de paiement d'abonnement - avant une date de renouvellement d'abonnement",
-        "Alertes de grande transaction - quand une transaction dépasse un seuil que vous définissez",
-        "Alertes de solde bas - quand le solde d'un compte tombe en dessous d'un seuil que vous définissez",
+        "Alertes de transactions importantes - lorsqu'une transaction dépasse un seuil que vous définissez",
+        "Alertes de solde faible - lorsque le solde d'un compte tombe en dessous d'un seuil que vous définissez",
         "Résumé quotidien des dépenses - un récapitulatif quotidien de vos revenus et dépenses"
       ]
     },
     "user_rights": {
-      "title": "Vos Droits",
+      "title": "Vos droits",
       "content": "Puisque toutes vos données sont stockées localement sur votre appareil, vous avez un contrôle total :",
       "items": [
         "Accès : toutes vos données sont visibles directement dans l'application",
-        "Suppression : utilisez l'option Réinitialisation d'usine dans Paramètres pour effacer définitivement toutes les données",
-        "Export : utilisez la fonctionnalité Sauvegarde & Restauration pour exporter vos données",
-        "Publicité : réinitialisez votre ID publicitaire dans les paramètres de votre appareil, ou refusez via le formulaire de consentement GDPR",
-        "Notifications : désactivez tout ou partie des types de notification dans les Paramètres de notification de l'application"
+        "Suppression : utilisez l'option Réinitialisation d'usine dans les Paramètres pour effacer définitivement toutes les données de l'application",
+        "Export : utilisez la fonction Sauvegarde & Restauration pour exporter vos données",
+        "Publicité : réinitialisez votre identifiant publicitaire dans les paramètres de votre appareil, ou refusez via le formulaire de consentement RGPD",
+        "Notifications : désactivez tout ou partie des types de notifications dans les Paramètres de notification de l'application"
       ]
     },
     "children": {
-      "title": "Confidentialité des Enfants",
-      "content": "Khazinti n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants."
+      "title": "Confidentialité des enfants",
+      "content": "Khazinti n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès des enfants."
     },
     "changes": {
-      "title": "Modifications de cette Politique",
-      "content": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Les modifications seront reflétées dans le changelog de l'application et sur cette page avec une date mise à jour."
+      "title": "Modifications de cette politique",
+      "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Les modifications seront reflétées dans le journal des modifications de l'application et sur cette page avec une date mise à jour."
     },
     "contact": {
-      "title": "Nous Contacter",
-      "content": "Si vous avez des questions sur cette Politique de Confidentialité, veuillez nous contacter à :",
+      "title": "Nous contacter",
+      "content": "Si vous avez des questions sur cette politique de confidentialité, veuillez nous contacter à :",
       "email": "support.khazinti@gmail.com"
+    }
+  },
+  "support": {
+    "badge": "Nous sommes là pour vous aider",
+    "title": "Centre d'assistance",
+    "subtitle": "Une question ou besoin d'aide ? Contactez-nous par email ou rejoignez notre communauté Discord.",
+    "email": {
+      "label": "Support par email",
+      "hint": "Réponse sous 24–48 heures"
+    },
+    "discord": {
+      "label": "Communauté Discord",
+      "hint": "Discutez avec l'équipe et les autres utilisateurs"
+    },
+    "response": {
+      "title": "Délai de réponse",
+      "desc": "Nous répondons généralement sous 24–48 heures les jours ouvrables."
+    },
+    "languages": {
+      "title": "Langues",
+      "desc": "Support disponible en anglais, français et arabe"
+    },
+    "privacy_note": {
+      "title": "Votre confidentialité",
+      "desc": "Ne partagez jamais vos données financières lors d'un contact - nous n'en avons pas besoin."
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": "Khazinti est-il vraiment 100% hors ligne ?",
+      "a1": "Oui. Toutes vos données financières sont stockées exclusivement sur votre appareil via SQLite. Rien n'est jamais envoyé à un serveur. Il n'y a pas de compte, pas de connexion, pas de synchronisation cloud.",
+      "q2": "Khazinti est-il gratuit ?",
+      "a2": "Khazinti est gratuit avec toutes les fonctionnalités essentielles. Les fonctionnalités Premium seront disponibles dans de prochaines versions.",
+      "q3": "Comment sauvegarder mes données ?",
+      "a3": "Allez dans Paramètres → Sauvegarde & Restauration. Vous pouvez exporter vos données sous forme de fichier et les importer sur un autre appareil ou après une réinstallation.",
+      "q4": "Pourquoi je vois des publicités ?",
+      "a4": "Les utilisateurs gratuits voient des publicités interstitielles occasionnelles via Google AdMob. La mise à niveau Premium supprime toutes les publicités définitivement.",
+      "q5": "J'ai trouvé un bug - comment le signaler ?",
+      "a5_before_email": "Envoyez un email à",
+      "a5_after_email": "avec une description du problème, votre version Android et la version de l'application (visible dans Paramètres → À propos). Les captures d'écran sont toujours utiles. Vous pouvez également signaler le bug sur",
+      "a5_after_discord": ".",
+      "q6": "L'application est-elle disponible sur iPhone ?",
+      "a6": "L'application est actuellement disponible uniquement sur Android. Nous prévoyons de lancer une version iPhone dans une prochaine version."
     }
   }
 }
