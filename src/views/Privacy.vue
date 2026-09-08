@@ -79,21 +79,13 @@
         <p>{{ t('privacy.changes.content') }}</p>
       </section>
 
-      <!-- Contact -->
-      <section class="policy-section">
-        <h2>{{ t('privacy.contact.title') }}</h2>
-        <p>{{ t('privacy.contact.content') }}</p>
-        <a :href="'mailto:' + t('privacy.contact.email')" class="contact-email">
-          {{ t('privacy.contact.email') }}
-        </a>
-      </section>
     </div>
   </div>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n'
-import LanguageSwitcher from '../components/LanguageSwitcher.vue'
+
 
 const { t, tm } = useI18n()
 

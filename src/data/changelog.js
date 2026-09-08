@@ -48,17 +48,17 @@ export const CHANGELOG = [
     date: '2026-08-21',
     changes: {
       en: [
-        'Improved: Ad timing optimized — fewer interruptions',
+        'Improved: Ad timing optimized - fewer interruptions',
         'New: Back buttons added to About, Help, Notifications, and Exchange Rates screens',
         'Fixed: Dashboard transaction menu restored',
       ],
       fr: [
-        'Amélioré : Timing des publicités optimisé — moins d\'interruptions',
+        'Amélioré : Timing des publicités optimisé - moins d\'interruptions',
         'Nouveau : Boutons retour ajoutés sur À propos, Aide, Notifications et Taux de change',
         'Corrigé : Menu transactions du tableau de bord restauré',
       ],
       arTN: [
-        'تحسين: توقيت الإعلانات أحسن — أقل مقاطعات',
+        'تحسين: توقيت الإعلانات أحسن - أقل مقاطعات',
         'جديد: أزرار رجوع في شاشات حول التطبيق، المساعدة، الإشعارات، وأسعار الصرف',
         'تصليح: قائمة المعاملات في الصفحة الرئيسية رجعت',
       ],
@@ -102,15 +102,15 @@ export const CHANGELOG = [
     date: '2026-08-17',
     changes: {
       en: [
-        'New: Tour step 8 added — introduces the bottom navigation bar',
+        'New: Tour step 8 added - introduces the bottom navigation bar',
         'Improved: Tour steps 4–7 now show full-page overviews of each section',
       ],
       fr: [
-        'Nouveau : Étape 8 du tour ajoutée — présente la barre de navigation inférieure',
+        'Nouveau : Étape 8 du tour ajoutée - présente la barre de navigation inférieure',
         'Amélioré : Les étapes 4–7 du tour affichent des aperçus pleine page de chaque section',
       ],
       arTN: [
-        'جديد: خطوة 8 في الجولة — تعرّف على شريط التنقل السفلي',
+        'جديد: خطوة 8 في الجولة - تعرّف على شريط التنقل السفلي',
         'تحسين: خطوات 4–7 تعرض نظرة عامة كاملة على كل قسم',
       ],
     },
@@ -225,19 +225,19 @@ export const CHANGELOG = [
     date: '2026-08-07',
     changes: {
       en: [
-        'New: Interactive app tour — launches on first use, restartable from Help',
+        'New: Interactive app tour - launches on first use, restartable from Help',
         'New: Tour progress is saved so you can resume where you left off',
         'New: Tour fully supports Arabic with proper RTL layout',
         'New: Haptic vibration feedback during tour steps',
       ],
       fr: [
-        'Nouveau : Tour interactif de l\'application — se lance au premier démarrage, redémarrable depuis l\'Aide',
+        'Nouveau : Tour interactif de l\'application - se lance au premier démarrage, redémarrable depuis l\'Aide',
         'Nouveau : La progression du tour est sauvegardée pour reprendre où vous vous êtes arrêté',
         'Nouveau : Tour entièrement en arabe avec mise en page RTL correcte',
         'Nouveau : Retour haptique pendant les étapes du tour',
       ],
       arTN: [
-        'جديد: جولة تفاعلية في التطبيق — تبدأ أول مرة وتقدر تعيد تشغيلها من المساعدة',
+        'جديد: جولة تفاعلية في التطبيق - تبدأ أول مرة وتقدر تعيد تشغيلها من المساعدة',
         'جديد: تقدم الجولة يتحفظ باش تكمل من وين وقفت',
         'جديد: الجولة تدعم العربي بالكامل مع تخطيط RTL صحيح',
         'جديد: اهتزاز لمسي أثناء خطوات الجولة',
@@ -304,7 +304,7 @@ export const CHANGELOG = [
     changes: {
       en: [
         'Improved: Transaction cards are now uniform across all screens',
-        'New: More account colors to choose from — 16 options total',
+        'New: More account colors to choose from - 16 options total',
         'New: 20 new category icons added',
         'New: You can now enter larger amounts (up to 12 digits)',
         'Improved: Settings reorganized into a single Preferences section with number format options',
@@ -312,7 +312,7 @@ export const CHANGELOG = [
       ],
       fr: [
         'Amélioré : Cartes de transaction uniformes sur tous les écrans',
-        'Nouveau : Plus de couleurs de compte — 16 options au total',
+        'Nouveau : Plus de couleurs de compte - 16 options au total',
         'Nouveau : 20 nouvelles icônes de catégorie ajoutées',
         'Nouveau : Vous pouvez saisir des montants plus grands (jusqu\'à 12 chiffres)',
         'Amélioré : Paramètres réorganisés en une section Préférences avec options de format',
@@ -320,7 +320,7 @@ export const CHANGELOG = [
       ],
       arTN: [
         'تحسين: بطاقات المعاملات موحدة في كل الشاشات',
-        'جديد: ألوان حسابات أكثر — 16 خيار',
+        'جديد: ألوان حسابات أكثر - 16 خيار',
         'جديد: 20 أيقونة فئة جديدة',
         'جديد: تقدر تدخل مبالغ أكبر (حتى 12 رقم)',
         'تحسين: الإعدادات منظمة في قسم تفضيلات واحد مع خيارات التنسيق',
@@ -421,21 +421,21 @@ export const CHANGELOG = [
         'Fixed: First ad of a new session now shows reliably',
         'New: Account cards are now compact and grouped by type (Bank, Cash, Wallet, Savings, Meal Voucher)',
         'New: Account edit and delete moved to a menu (tap the 3 dots)',
-        'New: Delete account now offers two choices — delete related transactions or move them to another account',
+        'New: Delete account now offers two choices - delete related transactions or move them to another account',
       ],
       fr: [
         'Corrigé : La copie d\'une transaction pré-remplit la description',
         'Corrigé : La première publicité d\'une nouvelle session s\'affiche correctement',
         'Nouveau : Cartes de compte compactes et groupées par type (Banque, Espèces, Portefeuille, Épargne, Ticket Restaurant)',
         'Nouveau : Modification et suppression de compte déplacées dans un menu (3 points)',
-        'Nouveau : La suppression d\'un compte propose deux choix — supprimer les transactions liées ou les déplacer',
+        'Nouveau : La suppression d\'un compte propose deux choix - supprimer les transactions liées ou les déplacer',
       ],
       arTN: [
         'تصليح: نسخ معاملة يملأ الوصف مسبقاً',
         'تصليح: أول إعلان في جلسة جديدة يظهر صح',
         'جديد: بطاقات الحسابات مدمجة ومجمعة حسب النوع (بنك، نقد، محفظة، ادخار، قسيمة وجبة)',
         'جديد: تعديل وحذف الحساب انتقلا لقائمة (3 نقاط)',
-        'جديد: حذف الحساب يعطيك خيارين — حذف المعاملات المرتبطة أو نقلها لحساب آخر',
+        'جديد: حذف الحساب يعطيك خيارين - حذف المعاملات المرتبطة أو نقلها لحساب آخر',
       ],
     },
   },
@@ -762,13 +762,13 @@ export const CHANGELOG = [
     date: '2026-06-15',
     changes: {
       en: [
-        'Fixed: Notification alert fields — keyboard no longer closes while typing threshold amounts',
+        'Fixed: Notification alert fields - keyboard no longer closes while typing threshold amounts',
       ],
       fr: [
-        'Corrigé : Champs d\'alerte de notification — le clavier ne se ferme plus lors de la saisie des montants seuil',
+        'Corrigé : Champs d\'alerte de notification - le clavier ne se ferme plus lors de la saisie des montants seuil',
       ],
       arTN: [
-        'تصليح: حقول تنبيه الإشعارات — لوحة المفاتيح ما تقفلش عند كتابة مبالغ الحد',
+        'تصليح: حقول تنبيه الإشعارات - لوحة المفاتيح ما تقفلش عند كتابة مبالغ الحد',
       ],
     },
   },
@@ -778,15 +778,15 @@ export const CHANGELOG = [
     changes: {
       en: [
         'Fixed: Transaction screen crash ("Rendered fewer hooks than expected") resolved',
-        'Fixed: Notification alert fields — keyboard no longer dismisses while typing threshold amounts',
+        'Fixed: Notification alert fields - keyboard no longer dismisses while typing threshold amounts',
       ],
       fr: [
         'Corrigé : Crash de l\'écran des transactions résolu',
-        'Corrigé : Champs d\'alerte de notification — le clavier ne se ferme plus lors de la saisie',
+        'Corrigé : Champs d\'alerte de notification - le clavier ne se ferme plus lors de la saisie',
       ],
       arTN: [
         'تصليح: تعطل شاشة المعاملات تصلح',
-        'تصليح: حقول تنبيه الإشعارات — لوحة المفاتيح ما تختفيش عند الكتابة',
+        'تصليح: حقول تنبيه الإشعارات - لوحة المفاتيح ما تختفيش عند الكتابة',
       ],
     },
   },
@@ -796,17 +796,17 @@ export const CHANGELOG = [
     changes: {
       en: [
         'Fixed: Transaction screen crash on open resolved',
-        'Fixed: Notification threshold fields — keyboard no longer closes while typing',
+        'Fixed: Notification threshold fields - keyboard no longer closes while typing',
         'Fixed: Subscription card bell icon removed to reclaim card space',
       ],
       fr: [
         'Corrigé : Crash de l\'écran des transactions à l\'ouverture résolu',
-        'Corrigé : Champs de seuil de notification — le clavier ne se ferme plus lors de la saisie',
+        'Corrigé : Champs de seuil de notification - le clavier ne se ferme plus lors de la saisie',
         'Corrigé : Icône de cloche de la carte d\'abonnement supprimée pour récupérer de l\'espace',
       ],
       arTN: [
         'تصليح: تعطل شاشة المعاملات عند الفتح تصلح',
-        'تصليح: حقول حد الإشعارات — لوحة المفاتيح ما تقفلش عند الكتابة',
+        'تصليح: حقول حد الإشعارات - لوحة المفاتيح ما تقفلش عند الكتابة',
         'تصليح: أيقونة الجرس في بطاقة الاشتراك حُذفت لاستعادة مساحة البطاقة',
       ],
     },
@@ -817,7 +817,7 @@ export const CHANGELOG = [
     changes: {
       en: [
         'Fixed: Transaction screen crash on open resolved',
-        'Fixed: Notification threshold fields — keyboard no longer closes while typing',
+        'Fixed: Notification threshold fields - keyboard no longer closes while typing',
         'Fixed: Subscriptions tab icon updated to CalendarClock',
         'Fixed: Budget FAB button icon changed to Target',
         'Fixed: Big transaction notification now shows the actual transaction amount and threshold correctly',
@@ -825,7 +825,7 @@ export const CHANGELOG = [
       ],
       fr: [
         'Corrigé : Crash de l\'écran des transactions résolu',
-        'Corrigé : Champs de seuil de notification — le clavier ne se ferme plus',
+        'Corrigé : Champs de seuil de notification - le clavier ne se ferme plus',
         'Corrigé : Icône de l\'onglet Abonnements mise à jour',
         'Corrigé : Icône du bouton FAB Budget changée',
         'Corrigé : La notification de grande transaction affiche maintenant le montant et le seuil corrects',
@@ -833,7 +833,7 @@ export const CHANGELOG = [
       ],
       arTN: [
         'تصليح: تعطل شاشة المعاملات تصلح',
-        'تصليح: حقول حد الإشعارات — لوحة المفاتيح ما تقفلش',
+        'تصليح: حقول حد الإشعارات - لوحة المفاتيح ما تقفلش',
         'تصليح: أيقونة تبويب الاشتراكات محدّثة',
         'تصليح: أيقونة زر FAB الميزانية تغيرت',
         'تصليح: إشعار المعاملة الكبيرة يعرض الآن المبلغ والحد الصحيحين',
@@ -846,28 +846,28 @@ export const CHANGELOG = [
     date: '2026-06-12',
     changes: {
       en: [
-        'New: Transaction Filter Sheet — filter by date range, accounts, categories, type, and amount range',
-        'New: Account quick-filter chips — one-tap account filtering above the transaction list',
-        'New: View mode toggle — switch between List, Grid, and Calendar views (saved across sessions)',
-        'New: Grid view — compact 2-column card layout for at-a-glance browsing',
-        'New: Calendar view — monthly grid showing daily income/expense totals; tap a day to filter',
-        'New: Daily totals in section headers — each date group shows its +income and −expense total',
+        'New: Transaction Filter Sheet - filter by date range, accounts, categories, type, and amount range',
+        'New: Account quick-filter chips - one-tap account filtering above the transaction list',
+        'New: View mode toggle - switch between List, Grid, and Calendar views (saved across sessions)',
+        'New: Grid view - compact 2-column card layout for at-a-glance browsing',
+        'New: Calendar view - monthly grid showing daily income/expense totals; tap a day to filter',
+        'New: Daily totals in section headers - each date group shows its +income and −expense total',
       ],
       fr: [
-        'Nouveau : Feuille de filtre de transactions — filtrez par plage de dates, comptes, catégories, type et montant',
-        'Nouveau : Chips de filtre rapide de compte — filtrage d\'un compte en un tap au-dessus de la liste',
-        'Nouveau : Bascule de mode de vue — basculez entre les vues Liste, Grille et Calendrier (sauvegardées)',
-        'Nouveau : Vue Grille — mise en page compacte à 2 colonnes pour une navigation rapide',
-        'Nouveau : Vue Calendrier — grille mensuelle avec totaux quotidiens revenus/dépenses ; appuyez sur un jour pour filtrer',
-        'Nouveau : Totaux quotidiens dans les en-têtes de section — chaque groupe de dates affiche son total +revenu et −dépense',
+        'Nouveau : Feuille de filtre de transactions - filtrez par plage de dates, comptes, catégories, type et montant',
+        'Nouveau : Chips de filtre rapide de compte - filtrage d\'un compte en un tap au-dessus de la liste',
+        'Nouveau : Bascule de mode de vue - basculez entre les vues Liste, Grille et Calendrier (sauvegardées)',
+        'Nouveau : Vue Grille - mise en page compacte à 2 colonnes pour une navigation rapide',
+        'Nouveau : Vue Calendrier - grille mensuelle avec totaux quotidiens revenus/dépenses ; appuyez sur un jour pour filtrer',
+        'Nouveau : Totaux quotidiens dans les en-têtes de section - chaque groupe de dates affiche son total +revenu et −dépense',
       ],
       arTN: [
-        'جديد: ورقة فلتر المعاملات — فلتر حسب نطاق التاريخ، الحسابات، الفئات، النوع، ونطاق المبلغ',
-        'جديد: رقائق فلتر الحساب السريع — فلترة حساب بضغطة واحدة فوق قائمة المعاملات',
-        'جديد: تبديل وضع العرض — تبديل بين عرض القائمة والشبكة والتقويم (محفوظ بين الجلسات)',
-        'جديد: عرض الشبكة — تخطيط بطاقة مدمج بعمودين للتصفح السريع',
-        'جديد: عرض التقويم — شبكة شهرية تعرض إجماليات الدخل/المصروف اليومية؛ اضغط على يوم للفلترة',
-        'جديد: الإجماليات اليومية في رؤوس الأقسام — كل مجموعة تواريخ تعرض إجمالي +الدخل و−المصروف',
+        'جديد: ورقة فلتر المعاملات - فلتر حسب نطاق التاريخ، الحسابات، الفئات، النوع، ونطاق المبلغ',
+        'جديد: رقائق فلتر الحساب السريع - فلترة حساب بضغطة واحدة فوق قائمة المعاملات',
+        'جديد: تبديل وضع العرض - تبديل بين عرض القائمة والشبكة والتقويم (محفوظ بين الجلسات)',
+        'جديد: عرض الشبكة - تخطيط بطاقة مدمج بعمودين للتصفح السريع',
+        'جديد: عرض التقويم - شبكة شهرية تعرض إجماليات الدخل/المصروف اليومية؛ اضغط على يوم للفلترة',
+        'جديد: الإجماليات اليومية في رؤوس الأقسام - كل مجموعة تواريخ تعرض إجمالي +الدخل و−المصروف',
       ],
     },
   },
@@ -972,24 +972,24 @@ export const CHANGELOG = [
     date: '2026-06-08',
     changes: {
       en: [
-        'New: Swipe gestures now show icons — trash when deleting, pause/play when suspending or reactivating a subscription',
+        'New: Swipe gestures now show icons - trash when deleting, pause/play when suspending or reactivating a subscription',
         'New: Transaction cards support swipe-to-delete, consistent with subscriptions',
-        'Improved: Action button (FAB) completely redesigned — vertical list layout, bottom-right position, smooth animation',
-        'Improved: Action button pulse animation only plays when idle — stops on tap',
+        'Improved: Action button (FAB) completely redesigned - vertical list layout, bottom-right position, smooth animation',
+        'Improved: Action button pulse animation only plays when idle - stops on tap',
         'Improved: Tapping an action button now opens the form immediately with no delay',
       ],
       fr: [
-        'Nouveau : Les gestes de glissement affichent maintenant des icônes — corbeille pour supprimer, pause/lecture pour suspendre ou réactiver un abonnement',
+        'Nouveau : Les gestes de glissement affichent maintenant des icônes - corbeille pour supprimer, pause/lecture pour suspendre ou réactiver un abonnement',
         'Nouveau : Les cartes de transaction supportent le glissement pour supprimer, cohérent avec les abonnements',
-        'Amélioré : Bouton d\'action (FAB) complètement redessiné — liste verticale, position en bas à droite, animation fluide',
+        'Amélioré : Bouton d\'action (FAB) complètement redessiné - liste verticale, position en bas à droite, animation fluide',
         'Amélioré : L\'animation de pulsation du bouton d\'action ne joue que lorsqu\'il est inactif',
         'Amélioré : Appuyer sur un bouton d\'action ouvre maintenant le formulaire immédiatement',
       ],
       arTN: [
-        'جديد: إيماءات السحب تعرض الآن أيقونات — سلة للحذف، إيقاف مؤقت/تشغيل لتعليق أو إعادة تفعيل اشتراك',
+        'جديد: إيماءات السحب تعرض الآن أيقونات - سلة للحذف، إيقاف مؤقت/تشغيل لتعليق أو إعادة تفعيل اشتراك',
         'جديد: بطاقات المعاملات تدعم السحب للحذف، متسقة مع الاشتراكات',
-        'تحسين: زر الإجراء (FAB) أعيد تصميمه بالكامل — تخطيط قائمة عمودية، موضع أسفل اليمين، رسوم متحركة سلسة',
-        'تحسين: رسوم متحركة نبض زر الإجراء تعمل فقط عند الخمول — تتوقف عند الضغط',
+        'تحسين: زر الإجراء (FAB) أعيد تصميمه بالكامل - تخطيط قائمة عمودية، موضع أسفل اليمين، رسوم متحركة سلسة',
+        'تحسين: رسوم متحركة نبض زر الإجراء تعمل فقط عند الخمول - تتوقف عند الضغط',
         'تحسين: الضغط على زر إجراء يفتح النموذج فوراً بدون تأخير',
       ],
     },
@@ -1155,19 +1155,19 @@ export const CHANGELOG = [
     date: '2026-05-01',
     changes: {
       en: [
-        'New: Manual subscription confirmation — you decide when to record a payment',
+        'New: Manual subscription confirmation - you decide when to record a payment',
         'New: Pending Subscriptions Dashboard section',
         'Fixed: Billing date save issue resolved',
         'Changed: No more auto-processing of subscription payments',
       ],
       fr: [
-        'Nouveau : Confirmation manuelle des abonnements — vous décidez quand enregistrer un paiement',
+        'Nouveau : Confirmation manuelle des abonnements - vous décidez quand enregistrer un paiement',
         'Nouveau : Section Abonnements en attente sur le tableau de bord',
         'Corrigé : Problème de sauvegarde de la date de facturation résolu',
         'Changé : Plus de traitement automatique des paiements d\'abonnement',
       ],
       arTN: [
-        'جديد: تأكيد يدوي للاشتراكات — أنت تقرر متى تسجل الدفع',
+        'جديد: تأكيد يدوي للاشتراكات - أنت تقرر متى تسجل الدفع',
         'جديد: قسم الاشتراكات المعلقة في الصفحة الرئيسية',
         'تصليح: مشكلة حفظ تاريخ الفاتورة تصلحت',
         'تغيير: ما عاد فيه معالجة تلقائية لمدفوعات الاشتراك',

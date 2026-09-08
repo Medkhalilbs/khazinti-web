@@ -10,6 +10,7 @@
         <router-link to="/" class="nav-link" exact-active-class="nav-link--active">{{ t('nav.home') }}</router-link>
         <router-link to="/privacy" class="nav-link" active-class="nav-link--active">{{ t('nav.privacy') }}</router-link>
         <router-link to="/changelog" class="nav-link" active-class="nav-link--active">{{ t('nav.changelog') }}</router-link>
+        <router-link to="/support" class="nav-link" active-class="nav-link--active">{{ t('nav.support') }}</router-link>
         <LanguageSwitcher />
         <button class="theme-toggle" @click="toggleTheme" :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
           <Transition name="icon-swap" mode="out-in">
@@ -58,6 +59,12 @@
           active-class="nav-link--active"
           @click="mobileOpen = false"
         >{{ t('nav.changelog') }}</router-link>
+        <router-link
+          to="/support"
+          class="nav-link mobile-nav-link"
+          active-class="nav-link--active"
+          @click="mobileOpen = false"
+        >{{ t('nav.support') }}</router-link>
         <div class="mobile-menu-footer">
           <LanguageSwitcher />
           <button class="theme-toggle mobile-theme-toggle" @click="toggleTheme">

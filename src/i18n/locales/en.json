@@ -3,7 +3,8 @@
     "home": "Home",
     "privacy": "Privacy Policy",
     "changelog": "Changelog",
-    "download": "Download"
+    "download": "Download",
+    "support": "Support"
   },
   "changelog": {
     "title": "Changelog",
@@ -68,7 +69,9 @@
     "contact": "Contact",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "support": "Support",
+    "discord": "Discord Community"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -142,6 +145,48 @@
       "title": "Contact Us",
       "content": "If you have any questions about this Privacy Policy, please contact us at:",
       "email": "support.khazinti@gmail.com"
+    }
+  },
+  "support": {
+    "badge": "We're here to help",
+    "title": "Support Center",
+    "subtitle": "Got a question or need help? Reach us by email or join our community on Discord.",
+    "email": {
+      "label": "Email Support",
+      "hint": "Response within 24–48 hours"
+    },
+    "discord": {
+      "label": "Discord Community",
+      "hint": "Chat with the team and other users"
+    },
+    "response": {
+      "title": "Response Time",
+      "desc": "We typically reply within 24–48 hours on business days."
+    },
+    "languages": {
+      "title": "Languages",
+      "desc": "Support available in English, French, and Arabic."
+    },
+    "privacy_note": {
+      "title": "Your Privacy",
+      "desc": "Never share your financial data when contacting support - we don't need it."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Is Khazinti really 100% offline?",
+      "a1": "Yes. All your financial data is stored exclusively on your device using SQLite. Nothing is ever sent to a server. There is no account, no login, no cloud sync.",
+      "q2": "Is Khazinti free?",
+      "a2": "Khazinti is free to use with all core features. Premium features will be available in future releases.",
+      "q3": "How do I backup my data?",
+      "a3": "Go to Settings → Backup & Restore. You can export your data as a file and import it on another device or after reinstalling the app.",
+      "q4": "Why do I see ads?",
+      "a4": "Free users see occasional interstitial ads powered by Google AdMob. Upgrading to Premium removes all ads permanently.",
+      "q5": "I found a bug - how do I report it?",
+      "a5_before_email": "Send an email to",
+      "a5_after_email": "with a description of the issue, your Android version, and the app version (visible in Settings → About). Screenshots are always helpful. You can also report the bug through",
+      "a5_after_discord": ".",
+      "q6": "Is the app available on iPhone?",
+      "a6": "The app is currently available on Android only. We plan to release an iPhone version in a future release."
     }
   }
 }

@@ -19,6 +19,7 @@
         <div class="link-group">
           <h4>{{ t('footer.contact') }}</h4>
           <a href="mailto:support.khazinti@gmail.com">support.khazinti@gmail.com</a>
+          <a href="https://discord.gg/BCjBnAk9k" target="_blank" rel="noopener noreferrer">{{ t('footer.discord') }}</a>
         </div>
       </div>
     </div>
